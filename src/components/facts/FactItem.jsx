@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import styles from './FactItem.css';
 
 const FactItem = ({ text, colorCode }) => {
-
+  
   return (
-    <p className={colorCode}>{text}</p>
+    <p className={styles[colorCode]}>{text}</p>
   );
 };
 

@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { fetchFacts } from '../../actions/factsActions';
 import FactItem from './FactItem';
 
+
 const FactDisplay = () => {
   const dispatch = useDispatch();
   const facts = useSelector(state => state.facts);

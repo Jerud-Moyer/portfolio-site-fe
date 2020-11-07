@@ -1,0 +1,32 @@
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+}
+
+p {
+  min-height: 25vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+.yellow {
+  background-color: var(--YellowGreenCrayola); 
+}
+
+.green {
+  background-color: var(--LightGreen);
+}
+
+.blue {
+  background-color: var(--AeroBlue);
+}
+
+.red {
+  background-color: var(--OrchidCrayola);
+}
