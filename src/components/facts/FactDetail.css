@@ -12,13 +12,12 @@
   --Alabaster: #E6EBE0;
 }
 
-p {
-  min-height: 25vh;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
+.detailBox {
+  img{
+  max-width: 60vw;
+  max-height: 60vh;
+  }
 }
-
 
 .yellow {
   background-color: var(--YellowGreenCrayola); 
