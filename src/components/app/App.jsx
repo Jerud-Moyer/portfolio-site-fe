@@ -9,6 +9,8 @@ import FactDisplay from '../facts/FactDisplay';
 import FactList from '../facts/FactList';
 import AdminPage from '../admin/AdminPage';
 import styles from './app.css';
+import UpdateFact from '../admin/UpdateFact';
+import CreateFact from '../admin/CreateFact';
 
 
 export default function App() {
@@ -20,6 +22,8 @@ export default function App() {
           <Route exact path="/list" component={FactList} />
           <Route exact path="/detail/:id" component={FactDetail} />
           <Route exact path="/admin" component={AdminPage} />
+          <Route exact path="/UpdateFact/:id" component={UpdateFact} />
+          <Route exact path="/Create" component={CreateFact} />
         </Switch>
       </Router>
     </div>

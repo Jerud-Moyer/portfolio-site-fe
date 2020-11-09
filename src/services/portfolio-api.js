@@ -49,3 +49,19 @@ export const postFact = async(fact) => {
 
   return json;
 };
+
+export const updateFact = async(id, fact) => {
+  console.log(id, fact);
+  const res = await fetch(`${url}/${id}`, {
+    method: 'PUT',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(fact)
+  });
+
+  const json = await res.json();
+  if(!res.ok) throw json;
+
+  return json;
+};

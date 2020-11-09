@@ -34,9 +34,10 @@ const CreateFact = () => {
   return (
     
     <form onSubmit={handleSubmit}>
+      <h2>add a fact</h2>
       <label htmlFor="fact-type">Fact Type</label>
       <input
-        placeholder="personal, professional, memory, or hobby related"
+        placeholder="personal, professional, memory, or random"
         id="fact-type"
         name="type"
         value={type}

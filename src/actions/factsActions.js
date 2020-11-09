@@ -2,7 +2,8 @@ import {
   getFacts,
   deleteFact,
   getFactById,
-  postFact
+  postFact,
+  updateFact
 } from '../services/portfolio-api';
 
 export const SET_FACTS = 'SET_FACTS';
@@ -63,5 +64,12 @@ export const createFact = fact => dispatch => {
   postFact(fact)
     .then(createdFact => {
       dispatch(appendFact(createdFact));
+    });
+};
+
+export const changeFact = (id, fact) => dispatch => {
+  updateFact(id, fact)
+    .then(updatedFact => {
+      dispatch(appendFact(updatedFact));
     });
 };
