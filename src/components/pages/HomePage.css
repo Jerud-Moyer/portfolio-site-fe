@@ -1,0 +1,50 @@
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.homePage {
+  height: 100vh;
+  padding: 2.3em;
+  background-color: var(--Ebony);
+}
+
+.topBox {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.headline {
+  margin-top: 2em;
+  margin-left: 4em;
+  font-family: 'Inconsolata';
+  font-size: 3em;
+  color: var(--Ebony-Dark);
+  animation: shadowColor ease infinite 20s;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+
+@keyframes shadowColor {
+  0% {text-shadow: none}
+  25% {text-shadow: var(--CadetBlue) 1px 1px}
+  50% {text-shadow: none}
+  75% {text-shadow: var(--TerraCotta) 1px 1px}
+}

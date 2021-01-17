@@ -1,8 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --AeroBlue: #D6F9DD;
   --LightGreen: #99F7AB;
   --YellowGreenCrayola: #ABDF75;
   --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
   --SilverSand: #C5D6D8;
   --OrchidCrayola: #FFB2E6;
   --TerraCotta: #ED6A5A;
@@ -12,11 +17,31 @@
   --Alabaster: #E6EBE0;
 }
 
-p {
-  min-height: 25vh;
+.yellow, .green, .blue, .red {
+  position: relative;
+  max-width: 70vw;
+  margin-top: 6em;
+  padding: 2px;
+  height: 3.5vh;
   display: flex;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
+  text-align: center;
+  font-family: 'Montserrat';
+  border-radius: 14px;
+  border: solid black 1px;
+  box-shadow: var(--Ebony-Dark) 2px 3px;
+
+  animation: slidIn ease infinite 10s;
+}
+
+.fact {
+  animation: fade ease infinite 5s;
+}
+
+.link {
+  color: var(--Ebony-Dark);
+  text-decoration: none;
 }
 
 
@@ -34,4 +59,20 @@ p {
 
 .red {
   background-color: var(--TerraCotta);
+}
+
+@keyframes slidIn {
+  0%{left: 600px}
+  25%{left: 350px}
+  50% {right: 400px}
+  100% {right: 100px}
+}
+
+@keyframes fade {
+ 0% {opacity: 0}
+ 5% {opacity: 0}
+ 70% {opacity: 1}
+ 85% {opacity: 1}
+ 90% {opacity: 0}
+ 100% {opacity: 0} 
 }

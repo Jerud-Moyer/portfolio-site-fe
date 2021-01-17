@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 :root {
   --AeroBlue: #D6F9DD;
   --LightGreen: #99F7AB;
@@ -7,9 +11,9 @@
   --OrchidCrayola: #FFB2E6;
 }
 
-.view {
+html {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  background-color: var(--SilverSand);
+  background-color: var(--Ebony);
 }

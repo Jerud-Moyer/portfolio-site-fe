@@ -1,0 +1,11 @@
+.sectionOne {
+  height: 170vh;
+  background-image: url('https://www.visittheusa.com/sites/default/files/styles/hero_l_x2/public/images/hero_media_image/2017-04/048df232dcf31e992cb9143f695f416e.jpeg?itok=InJXzMRV');
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  transform: translateZ(-1px) scale(1.1);
+  padding-bottom: 20vh;
+}

@@ -1,30 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { fetchFacts } from '../../actions/factsActions';
+import { useInterval } from '../../hooks/hooks';
 import FactItem from './FactItem';
+import styles from './FactItem.css';
 
 
 const FactDisplay = () => {
   const dispatch = useDispatch();
   const facts = useSelector(state => state.facts);
-  const loading = useSelector(state => state.loading);
+  const [randomFact, setRandomFact] = useState({});
+  
+  useInterval(() => {
+    const randomIndexNum = Math.floor(Math.random() * facts.length);
+    setRandomFact(facts[randomIndexNum]);
+  }, 5000);
 
+  
   useEffect(() => {
     dispatch(fetchFacts());
   }, []);
-
-  if(loading) return <h1>Loading.1.2.3.</h1>;
-
-  const randomIndexNum = Math.ceil(Math.random() * 9);
-  const randomFact = facts[randomIndexNum];
+  
   
   return (
-    <>
+    <div className={styles.fact}>
+      {randomFact &&
       <FactItem
+        id={randomFact.id}
         text={randomFact.text}
         colorCode={randomFact.colorCode}
       />
-    </>
+      }
+    </div>
   );
 };
 

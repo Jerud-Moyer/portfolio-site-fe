@@ -1,0 +1,10 @@
+.contactBox {
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.mediaPic {
+  width: 3em;
+  margin: .5em;
+}

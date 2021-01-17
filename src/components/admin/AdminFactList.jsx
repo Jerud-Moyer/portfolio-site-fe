@@ -23,7 +23,9 @@ const FactList = () => {
   
   const factElements = facts.map(fact => (
     <li key={fact.id}>
-      <Link to={`/detail/${fact.id}`}><p>{fact.text}</p></Link>
+      <Link to={`/detail/${fact.id}`}>
+        <div>{fact.text}</div>
+      </Link>
       <Link to={`/UpdateFact/${fact.id}`}>
         <button>update</button>
       </Link>
