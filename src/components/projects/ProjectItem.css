@@ -1,0 +1,52 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2em;
+}
+
+.name {
+  font-family: 'Inconsolata';
+}
+
+.projectItem > * {
+  margin: .5em 0 0 .5em;
+  text-decoration: none;
+  color: var(--Ebony-Dark);
+} 
+
+a:hover {
+  transition: ease 1.5s;
+  font-size: larger;
+  color: var(--TerraCotta);
+}
+
+.projectPic {
+  width: 15em;
+  border: solid black 1px;
+  border-radius: 5px;
+  box-shadow: var(--Ebony-Dark) 3px 3px;
+}
+
+.description {
+  width: 10em;
+}

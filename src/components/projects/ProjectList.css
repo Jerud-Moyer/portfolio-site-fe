@@ -1,0 +1,9 @@
+.projectBox {
+  padding: 5em;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
