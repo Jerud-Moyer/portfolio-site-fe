@@ -21,7 +21,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 2em;
+  margin: 1.5em;
 }
 
 .name {
@@ -34,6 +34,10 @@
   color: var(--Ebony-Dark);
 } 
 
+a {
+  animation: ebonyFade ease infinite 3s;
+}
+
 a:hover {
   transition: ease 1.5s;
   font-size: larger;
@@ -41,12 +45,35 @@ a:hover {
 }
 
 .projectPic {
-  width: 15em;
+
+  width: 12em;
+}
+
+.projectPicInView {
+  width: 12em;
   border: solid black 1px;
   border-radius: 5px;
-  box-shadow: var(--Ebony-Dark) 3px 3px;
+  box-shadow: var(--Ebony) 3px 3px 5px;
+  animation: jump ease 1s;
+  
 }
+
+
 
 .description {
   width: 10em;
+}
+
+@keyframes ebonyFade {
+  0% {color: var(--Ebony)}
+  50% {color: var(--Ebony-Dark)}
+  100% {color: var(--Ebony)}
+}
+
+@keyframes jump {
+  0% {transform: translate(0%, 0%);}
+  25% {transform: translate(0%, -20%)}
+  50% {transform: translate(0%, 0%);}
+  75% {transform: translate(0%, -10%);}
+  100% {transform: translate(0%, 0%);}
 }

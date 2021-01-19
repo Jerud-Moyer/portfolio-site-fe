@@ -1,15 +1,36 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 import PropTypes from 'prop-types';
 import styles from './ProjectItem.css';
 
 const ProjectItem = ({ name, imgUrl, siteLink, gitLink, description }) => {
+
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: .5,
+  });
+
   return (
-    <div  className={styles.projectItem}>
+    <div
+      className={inView ? styles.projectItem : null}
+      
+    >
       <h2 className={styles.name}>{name}</h2>
-      <img className={styles.projectPic} src={imgUrl} alt={name}/>
-      <p className={styles.description} >{description}</p>
-      <a className={styles.siteLink} href={siteLink}>{`Visit ${name}`}</a>
-      <a className={styles.gitLink} href={gitLink}>Git Repo</a>
+      <img
+        className={inView ?  styles.projectPicInView : styles.projectPic}
+        ref={ref}
+        src={imgUrl} 
+        alt={name}
+      />
+      <p className={styles.description}>{description}</p>
+      <a
+        className={styles.siteLink}
+        href={siteLink}>{`Visit ${name}`}
+      </a>
+      <a
+        className={styles.gitLink}
+        href={gitLink}>Git Repo
+      </a>
     </div>
   );
 };

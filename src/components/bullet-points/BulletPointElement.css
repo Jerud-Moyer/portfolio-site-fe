@@ -19,22 +19,22 @@ li {
 }
 
 .point0 {
-  animation: fadeIn ease 2s;
-  color: var(--Opal)
+  animation: fadeIn ease 8s;
+  color: var(--CadetBlue)
 }
 
 .point1 {
-  animation: fadeIn ease 4s;
+  animation: fadeIn ease 10s;
   color: var(--PaleSpringBud);
 }
 
 .point2 {
-  animation: fadeIn ease 6s;
+  animation: fadeIn ease 12s;
   color: var(--TerraCotta);
 }
 
 .point3 {
-  animation: fadeIn ease 8s;
+  animation: fadeIn ease 14s;
   color: var(--LightGreen);
 }
 
@@ -43,6 +43,6 @@ li {
 }
 
 @keyframes fadeIn {
-  from {opacity: 0}
-  to {opacity: 1}
+  from {opacity: 0; transform: rotate(10deg)}
+  to {opacity: 1; transform: rotate(0)}
 }

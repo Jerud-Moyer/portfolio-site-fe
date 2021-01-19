@@ -5,7 +5,7 @@ export const projects = [
     imgUrl: 'https://lh3.googleusercontent.com/DsmnFsDvm9szZuChFqrFEIcNzRNnJjMeJD14k3nbl7ADG6-t2gVPBecp2Cw_orCtNw1B-YWT8zHWCTt1f65__81pUOrYqRnjUdNtus-CpKWB09SE5xd3H_B5YJ9FH_-UWUAOe3kR91LgWwhYaKUg_36i0U0NJY_F0ueaw1lYStwu7kcOsyZKzl5AZsS2ZH0fNPRfBkoHWZLfd_9xMRv6dfOurjK4WJb2EH8LtXaltAwP6_fh29UT-h9AMuEdPZdB2qHJU1mbVaXasxEIZfaAI-qek93z395Py5lR3EY1WsSMj-oN_076O9uGj6--B4o2B2f7cUqS8qtPzfLk8iWGRthVNPM6MRIRNyFO5IgiUEkIfY4UCsZRtp7wb5Fsh9XXPJAejg9BG2RBBZ5rjo6c-2QYuWASQcuMGdoKDjxp2rXLtTeRodTLk20jSFb0BYvIckjKJDTpIlYAgU0N8os_faryz89WHufLICoYEBDb71ipAvQ6idbH1gy2vJ8zWMkC4q65t-XGo-7pbA-VeNFHzxGfOyYArzZugCeZJ8eXq98UVEXVFUujcV9ynwJdAGnSxfGsK9IcskXuXb6tnY9OUQ7eploSuciznDqGiR3x_Yf3y15Hhl5cdIZY8IcC5A5OjDxjB2WfjbRprFqcebL9Ln59AJYwncaxa1h7TWSfTX9sSvR-wYYk0XETKiT6ow=w2850-h1556-no?authuser=0',
     siteLink: 'https://mood-music.netlify.app/',
     gitLink: 'https://github.com/Silver-Surfers',
-    description: 'Take a selfie, recieve an emotional analysis, then submit for a spotify widget complete with playlist to match your mood!'
+    description: 'Take a selfie, recieve an emotional analysis, then submit for a spotify widget complete with a playlist to match your mood!'
   },
   {
     name: 'Project Vobot',

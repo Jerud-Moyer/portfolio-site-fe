@@ -2,11 +2,18 @@
   display: flex;
   flex-direction: column;
   width: 100px;
-  margin-top: 30px;
+  margin-top: 3em;
+  animation: fadeIn ease 8s;
+  
   
 }
 
 .mediaPic {
   width: 3em;
   margin: .5em;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
 }

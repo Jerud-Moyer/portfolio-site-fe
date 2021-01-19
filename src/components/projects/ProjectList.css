@@ -1,9 +1,25 @@
+.headline {
+  margin-left: 5em;
+  font-family: 'Inconsolata';
+  color: var(--Ebony-Dark);
+  animation: fadeIn ease 1s;
+}
+
 .projectBox {
-  padding: 5em;
+  padding: 4em;
+  animation: fadeIn ease 2s;
 }
 
 .projectList {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   flex-wrap: wrap;
+  
+}
+
+
+@keyframes fadeIn {
+  from {opacity:0}
+  to {opacity: 1}
 }

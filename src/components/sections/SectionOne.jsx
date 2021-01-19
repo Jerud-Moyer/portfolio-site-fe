@@ -1,7 +1,7 @@
 import React from 'react';
 import HomePage from '../pages/HomePage';
 import ProjectsPage from '../pages/ProjectsPage';
-import styles from './SectionOne.css';
+import styles from './Section.css';
 
 const SectionOne = () => {
   return (

@@ -20,7 +20,7 @@
 .yellow, .green, .blue, .red {
   position: relative;
   max-width: 70vw;
-  margin-top: 4em;
+  margin-top: 6em;
   padding: 2px;
   height: 3.5vh;
   display: flex;
@@ -30,7 +30,7 @@
   font-family: 'Montserrat';
   border-radius: 14px;
   border: solid black 1px;
-  box-shadow: var(--Ebony-Dark) 2px 3px;
+  box-shadow: var(--Ebony-Dark) 2px 3px 5px;
 
   animation: slidIn ease infinite 10s;
 }
@@ -54,7 +54,7 @@
 }
 
 .blue {
-  background-color: var(--AeroBlue);
+  background-color: var(--CadetBlue);
 }
 
 .red {

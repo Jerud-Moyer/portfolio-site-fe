@@ -5,9 +5,9 @@
 .sectionOne {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  width: 100vw;
   background-image: url('https://www.visittheusa.com/sites/default/files/styles/hero_l_x2/public/images/hero_media_image/2017-04/048df232dcf31e992cb9143f695f416e.jpeg?itok=InJXzMRV');
-  height: 90%;
+  height: 80%;
   position: relative;
   background-position: center;
   background-attachment: fixed;
@@ -15,5 +15,20 @@
   background-size: cover;
   
   transform: translateZ(-1px) scale(1.1);
-  padding-bottom: 20vh;
+  
+}
+
+.sectionTwo {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ef/Mount_Hood_reflected_in_Mirror_Lake%2C_Oregon.jpg');
+  height: 70%;
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  transform: translateZ(-1px) scale(1.1);
 }

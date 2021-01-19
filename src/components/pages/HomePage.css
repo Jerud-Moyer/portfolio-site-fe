@@ -22,11 +22,10 @@
   position: relative;
   min-height: 100vh;
   width: 100vw;
-  padding: 2.3em;
-  padding-bottom: 3em;
+  padding: 3.5em 2.5em 3em 0;
   margin-bottom: 50vh;
   background-color: var(--Ebony);
-  
+  overflow: hidden;
 }
 
 .topBox {
@@ -41,6 +40,7 @@
   font-family: 'Inconsolata';
   font-size: 3em;
   color: var(--Ebony-Dark);
+  animation-delay: 5s;
   animation: shadowColor ease infinite 20s;
 }
 
@@ -49,6 +49,9 @@
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
+  animation: shrink ease 5s;
+  
+  
 }
 
 
@@ -57,4 +60,9 @@
   25% {text-shadow: var(--CadetBlue) 1px 1px}
   50% {text-shadow: none}
   75% {text-shadow: var(--TerraCotta) 1px 1px}
+}
+
+@keyframes shrink {
+  from {transform: scale(2); }
+  to {transform: scale(1); }
 }

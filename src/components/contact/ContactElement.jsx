@@ -1,9 +1,9 @@
 import React from 'react';
-import email from '../../assets/email.png';
-import linkedIn from '../../assets/linkedin.png';
-import twitter from '../../assets/twitter.png';
-import github from '../../assets/github.png';
-import resume from '../../assets/pdf-icon.png';
+import email from '../../assets/email-ebony.png';
+import linkedIn from '../../assets/linkedin-ebony.png';
+import twitter from '../../assets/twitter-ebony.png';
+import github from '../../assets/github-ebony.png';
+import resume from '../../assets/pdf-icon-ebony.png';
 import styles from './ContactElement.css';
 
 const ContactElement = () => {
