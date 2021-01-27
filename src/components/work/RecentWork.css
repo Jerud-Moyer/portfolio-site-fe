@@ -29,7 +29,7 @@
 }
 
 .bigBox {
- margin: 90vh 0 0 0;
+ margin: 83vh 0 0 0;
  padding-bottom: 3em;
  min-height: 100vh;
  max-height: 120vh;
@@ -52,9 +52,10 @@
 
 .workBox {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin: 5vh 0 50vh 0;
+  flex-direction: grid;
+  grid-template-columns: 1fr 1fr 6fr;
+  margin: 5vh 0 0 0;
+  padding: 0 5vw 0 5vw;
   animation: fadeIn ease 5s;
 
   a {
@@ -76,6 +77,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  padding-left: 6.25em;
   margin: 0 5em 0 5em;
   
 }
@@ -87,11 +89,11 @@
 }
 
 .workPic {
-  width: 30em;
+  width: 20em;
   border: solid black 1px;
   border-radius: 10px;
   box-shadow: var(--Ebony) 8px 7px 10px;
-  animation: shrink ease 4s;
+  animation: shrink ease 3s;
 }
 
 @keyframes fadeIn {
@@ -100,6 +102,6 @@
 }
 
 @keyframes shrink {
-  from {width: 50em; transform: rotate(10deg);}
-  to {width:  30em; transform: rotate(0)}
+  from {width: 40em; transform: rotate(10deg);}
+  to {width:  20em; transform: rotate(0)}
 }

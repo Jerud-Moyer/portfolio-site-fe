@@ -2,6 +2,7 @@ import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { proProjects } from '../../data/proProjects';
 import styles from './RecentWork.css';
+import ContactElement from '../contact/ContactElement';
 
 
 const RecentWork = () => {
@@ -22,6 +23,7 @@ const RecentWork = () => {
       <div
         className={inView ? styles.workBox : null}
         ref={ref}>
+        <ContactElement />
         <h1
           className={inView ? styles.subHeadline : null}
         >{amphead.name}

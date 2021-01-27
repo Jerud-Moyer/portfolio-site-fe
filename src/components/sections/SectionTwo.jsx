@@ -1,6 +1,5 @@
 import React from 'react';
-import ProjectsPage from '../pages/ProjectsPage';
-import RecentWork from '../work/RecentWork';
+import WorkPage from '../pages/WorkPage';
 import styles from './Section.css';
 
 
@@ -8,7 +7,7 @@ import styles from './Section.css';
 const SectionTwo = () => {
   return (
     <div className={styles.sectionTwo} >
-      <RecentWork />
+      <WorkPage />
     </div>
   );
 };
