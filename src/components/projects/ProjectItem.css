@@ -34,13 +34,13 @@
   color: var(--Ebony-Dark);
 } 
 
-a {
+.projectItem > a {
   animation: ebonyFade ease infinite 3s;
+  transition: ease .5s;
 }
 
-a:hover {
-  transition: ease 1.5s;
-  font-size: larger;
+.projectItem > a:hover {
+  transform: scale(1.25);
   color: var(--TerraCotta);
 }
 

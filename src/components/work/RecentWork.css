@@ -29,6 +29,7 @@
 }
 
 .bigBox {
+ position: relative;
  margin: 83vh 0 0 0;
  padding-bottom: 3em;
  min-height: 100vh;
@@ -49,8 +50,8 @@
 
 
 
-
 .workBox {
+  position: relative;
   display: flex;
   flex-direction: grid;
   grid-template-columns: 1fr 1fr 6fr;
@@ -58,17 +59,6 @@
   padding: 0 5vw 0 5vw;
   animation: fadeIn ease 5s;
 
-  a {
-    text-decoration: none;
-    font-family: 'Montserrat';
-    color: var(--Ebony-Dark);
-  }
-
-  a:hover {
-    transition: ease 1.5s;
-    font-size: larger;
-    color: var(--TerraCotta);
-  }
   
 }
 
@@ -80,6 +70,17 @@
   padding-left: 6.25em;
   margin: 0 5em 0 5em;
   
+  a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: var(--Ebony-Dark);
+    transition: ease .5s;
+  }
+  
+  a:hover {
+    transform: scale(1.25);
+  
+  }
 }
 
 .workDescription {
@@ -102,6 +103,6 @@
 }
 
 @keyframes shrink {
-  from {width: 40em; transform: rotate(10deg);}
-  to {width:  20em; transform: rotate(0)}
+  from {transform: scale(2) rotate(10deg);}
+  to {transform: scale(1) rotate(0)}
 }

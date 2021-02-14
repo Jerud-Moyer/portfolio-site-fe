@@ -23,7 +23,7 @@ const RecentWork = () => {
       <div
         className={inView ? styles.workBox : null}
         ref={ref}>
-        <ContactElement />
+        {/* <ContactElement className={styles.contact} /> */}
         <h1
           className={inView ? styles.subHeadline : null}
         >{amphead.name}

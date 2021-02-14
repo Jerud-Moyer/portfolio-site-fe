@@ -18,7 +18,7 @@
 }
 
 .homePage {
-  display: block;
+ 
   position: relative;
   min-height: 100vh;
   width: 100vw;
@@ -29,8 +29,11 @@
 }
 
 .topBox {
+  position: relative;
   display: flex;
   justify-content: space-between;
+  padding-right: 2em;
+
 }
 
 

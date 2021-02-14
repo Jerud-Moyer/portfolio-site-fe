@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+
+.pic {
+  display: flex;
+  width: 3em;
+  margin: 1em 3em 1em .5em;
+  
+}
+
+.pic:hover {
+  transform: scale(1.5);
+}
+
+
+
+
+
+.popUp {
+  position: relative;
+  z-index: 2;
+  
+  
+}
+
+
+
+.popUp .toggle {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+
+
+.popUp .contain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  width: 50px;
+  height: 50px;
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.popUp .toggle:checked ~ .form {
+  visibility: visible;
+
+}
+
+.popUp .toggle:checked ~ .form > div {
+  transform: scale(1);
+  transition-duration: 0.75s;
+}
+
+.popUp .toggle:checked ~ .form > div > div {
+  opacity: 1;
+  transition: opacity 0.4s ease;
+
+}
+
+.popUp .form {
+  position: fixed;
+  left: 0;
+  top: -40em;
+  width: 100%;
+  height: 100%;
+  visibility: hidden;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.popUp .form > div {
+  
+  background: var(--AeroBlue);
+  border: solid var(--Alabaster) 2px;
+  border-radius: 20px;
+  box-shadow: inset black 2px 2px 5px 1px;
+  width: 50vw;
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(0);
+  transition: all 0.4s ease;
+  z-index: 5;
+}

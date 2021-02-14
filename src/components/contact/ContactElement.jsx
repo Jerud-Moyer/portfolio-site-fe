@@ -5,14 +5,15 @@ import twitter from '../../assets/twitter-ebony.png';
 import github from '../../assets/github-ebony.png';
 import resume from '../../assets/pdf-icon-ebony.png';
 import styles from './ContactElement.css';
+import PopUp from './PopUp';
 
 const ContactElement = () => {
   return (
     <div className={styles.contactBox}>
-      <a href={''}>
-        <img className={styles.mediaPic} src={email} alt={'Email'}/>
-      </a>
-      <a href={''}>
+      <div className={styles.popUpBox} >
+        <PopUp image={email}/>
+      </div>
+      <a href={'./public/Jerud moyer (6) (1).pdf'}>
         <img className={styles.mediaPic} src={resume} alt={'PDF'}/>
       </a>
       <a href={'https://twitter.com/Jerud7'}>

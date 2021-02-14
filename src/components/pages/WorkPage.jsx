@@ -7,6 +7,7 @@ const WorkPage = () => {
   return (
     <div className={styles.workPageBox} >
       <RecentWork />
+      
     </div>
   );
 };

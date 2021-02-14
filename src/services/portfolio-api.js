@@ -1,4 +1,5 @@
 const url = process.env.API_URL;
+const emailUrl = process.env.EMAIL_URL;
 
 export const getFacts = async() => {
   const res = await fetch(url);
@@ -51,13 +52,27 @@ export const postFact = async(fact) => {
 };
 
 export const updateFact = async(id, fact) => {
-  console.log(id, fact);
   const res = await fetch(`${url}/${id}`, {
     method: 'PUT',
     headers: {
       'Content-Type': 'application/json'
     },
     body: JSON.stringify(fact)
+  });
+
+  const json = await res.json();
+  if(!res.ok) throw json;
+
+  return json;
+};
+
+export const sendMessage = async(message) => {
+  const res = await fetch(emailUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/json'
+    },
+    body: JSON.stringify(message)
   });
 
   const json = await res.json();

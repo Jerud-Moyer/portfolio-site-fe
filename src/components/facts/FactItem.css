@@ -62,10 +62,16 @@
 }
 
 @keyframes slidIn {
-  0%{left: 600px}
-  25%{left: 350px}
-  50% {right: 400px}
-  100% {right: 100px}
+  0% {left: 60em}
+  25%{left: 35em}
+  50% {right: 30em}
+  75% {right: 5em}
+  100% {right: 5em}
+}
+
+
+@keyframes slide {
+  from {translate: 0, 0;}
 }
 
 @keyframes fade {
