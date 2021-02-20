@@ -1,11 +1,19 @@
-export const languages = [
+export const tech = [
   {
-    name: 'JavaScript'
+    name: 'languages',
+    items: ['JavaScript', 'CSS', 'HTML']
   },
   {
-    name: 'HTML'
+    name: 'frameworks',
+    items: ['React', 'NodeJS', 'PostgreSQL']
   },
   {
-    name: 'CSS'
+    name: 'libraries',
+    items: ['Redux', 'Express']
   },
+  {
+    name: 'testing',
+    items: ['Jest', 'Qunit', 'SuperTest']
+  },
+
 ];

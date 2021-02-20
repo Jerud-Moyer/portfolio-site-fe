@@ -2,11 +2,33 @@
   box-sizing: border-box;
 }
 
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.label {
+  display: block;
+  position: relative;
+}
+
 .pic {
+  position: relative;
   display: flex;
   width: 3em;
-  margin: 1em 3em 1em .5em;
-  
+  margin: 1em 3em .6em .47em;
+  transition: ease .5s;
+  cursor: pointer;
 }
 
 .pic:hover {
@@ -18,11 +40,14 @@
 
 
 .popUp {
+  display: flex;
   position: relative;
   z-index: 2;
   
   
 }
+
+
 
 
 
@@ -40,7 +65,7 @@
 
 
 .popUp .contain {
-  position: fixed;
+  position: absolute;
   top: 0;
   left: 0;
   z-index: 2;
@@ -72,7 +97,7 @@
 .popUp .form {
   position: fixed;
   left: 0;
-  top: -40em;
+  top: -35em;
   width: 100%;
   height: 100%;
   visibility: hidden;
@@ -85,9 +110,9 @@
 .popUp .form > div {
   
   background: var(--AeroBlue);
-  border: solid var(--Alabaster) 2px;
+  border: solid var(--Ebony-Dark) 2px;
   border-radius: 20px;
-  box-shadow: inset black 2px 2px 5px 1px;
+  box-shadow: inset var(--Ebony-Dark) 2px 2px 5px 1px;
   width: 50vw;
   height: 50vh;
   display: flex;

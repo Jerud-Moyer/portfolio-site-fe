@@ -18,14 +18,14 @@
 }
 
 .homePage {
- 
+  display: block;
   position: relative;
   min-height: 100vh;
   width: 100vw;
   padding: 3.5em 2.5em 3em 0;
   margin-bottom: 50vh;
   background-color: var(--Ebony);
-  overflow: hidden;
+  
 }
 
 .topBox {

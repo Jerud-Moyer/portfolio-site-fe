@@ -31,6 +31,7 @@
   border-radius: 14px;
   border: solid black 1px;
   box-shadow: var(--Ebony-Dark) 2px 3px 5px;
+  overflow: hidden;
 
   animation: slidIn ease infinite 10s;
 }
@@ -63,15 +64,19 @@
 
 @keyframes slidIn {
   0% {left: 60em}
-  25%{left: 35em}
-  50% {right: 30em}
+  25%{left: 25em}
+  50% {right: 40em}
   75% {right: 5em}
   100% {right: 5em}
 }
 
 
 @keyframes slide {
-  from {translate: 0, 0;}
+  0%  {transform: translate();}
+  25% {transform: translate(-35em);}
+  50% {right: 40em}
+  75% {transform: translate(35em);}
+  100% {right: 5em;}
 }
 
 @keyframes fade {

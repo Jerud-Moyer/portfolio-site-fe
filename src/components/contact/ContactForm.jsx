@@ -1,8 +1,9 @@
+import { PropTypes } from 'prop-types';
 import React, { useState } from 'react';
 import { sendMessage } from '../../services/portfolio-api';
 import styles from './ContactForm.css';
 
-const ContactForm = () => {
+const ContactForm = ({ formId }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -28,20 +29,24 @@ const ContactForm = () => {
 
   return (
     <div className={styles.contact}>
-      <label htmlFor={'checkbox'} className={styles.Xbox}>X</label>
+      <label
+        htmlFor={`form-checkbox${formId}`}
+        className={styles.Xbox}
+      >X
+      </label>
       <input
         type={'checkbox'}
-        id={'checkbox'}
+        id={`form-checkbox${formId}`}
         className={styles.checkbox}
       ></input>
       <form
-        id={'contact-form'}
+        id={`contact-form${formId}`}
         onSubmit={handleSubmit}
         method={'POST'}
       >
         <input
           type={'text'}
-          id={'name'}
+          id={`name${formId}`}
           name={'name'}
           value={name}
           placeholder={'name required'}
@@ -49,14 +54,14 @@ const ContactForm = () => {
         />
         <input
           type={'text'}
-          id={'email'}
+          id={`email${formId}`}
           name={'email'}
           value={email}
           placeholder={'email required'}
           onChange={handleChange}
         />
         <textarea
-          id={'message'}
+          id={`message${formId}`}
           name={'message'}
           value={message}
           placeholder={'message required'}
@@ -66,6 +71,10 @@ const ContactForm = () => {
       </form>
     </div>
   );
+};
+
+ContactForm.propTypes = {
+  formId: PropTypes.string.isRequired
 };
 
 export default ContactForm;

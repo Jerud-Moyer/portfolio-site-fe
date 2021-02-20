@@ -6,12 +6,13 @@ import github from '../../assets/github-ebony.png';
 import resume from '../../assets/pdf-icon-ebony.png';
 import styles from './ContactElement.css';
 import PopUp from './PopUp';
+import { PropTypes } from 'prop-types';
 
-const ContactElement = () => {
+const ContactElement = ({ page }) => {
   return (
     <div className={styles.contactBox}>
       <div className={styles.popUpBox} >
-        <PopUp image={email}/>
+        <PopUp image={email} formId={page}/>
       </div>
       <a href={'./public/Jerud moyer (6) (1).pdf'}>
         <img className={styles.mediaPic} src={resume} alt={'PDF'}/>
@@ -28,6 +29,10 @@ const ContactElement = () => {
       
     </div>
   );
+};
+
+ContactElement.propTypes = {
+  page: PropTypes.string.isRequired
 };
 
 export default ContactElement;

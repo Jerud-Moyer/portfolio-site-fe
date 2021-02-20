@@ -3,11 +3,12 @@ import ContactForm from './ContactForm';
 import styles from './PopUp.css';
 import PropTypes from 'prop-types';
 
-const PopUp = ({ image }) => {
+const PopUp = ({ image, formId }) => {
   return (
     <div>
       <div className={styles.popUp}>
-        <label htmlFor={'checkbox'} className={styles.label} >
+        <label htmlFor={`form-checkbox${formId}`}
+          className={styles.label} >
           <img
             src={image}
             alt={'email'}
@@ -16,7 +17,7 @@ const PopUp = ({ image }) => {
         </label>
         <input
           type={'checkbox'}
-          id={'checkbox'}
+          id={`form-checkbox${formId}`}
           className={styles.toggle}>
         </input>        
         <div className={styles.contain}>
@@ -26,7 +27,7 @@ const PopUp = ({ image }) => {
         <div className={styles.form}>
           <div>
             <div>
-              <ContactForm />
+              <ContactForm formId={formId}/>
             </div>
           </div>
         </div>
@@ -36,7 +37,8 @@ const PopUp = ({ image }) => {
 };
 
 PopUp.propTypes = {
-  image: PropTypes.string.isRequired
+  image: PropTypes.string.isRequired,
+  formId: PropTypes.string.isRequired
 };
 
 export default PopUp;

@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.techPage {
+  height: 100vh;
+  background: var(--YellowGreenCrayola);
+  padding: 10em;
+}
