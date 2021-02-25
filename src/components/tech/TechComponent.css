@@ -17,34 +17,89 @@
   --Alabaster: #E6EBE0;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
+.componentBox {
+  margin: 3em;
+}
+
+.techCategory {
+  color: var(--Ebony);
+}
+
+.tech0, .tech1, .tech2, .tech3 {
+  font-family: 'Montserrat';
+  color: var(--Ebony-Dark);
+}
+
 .tech0 {
- 
- animation: fadeIn ease 2s;
+  animation: fadeIn ease 2s, shine ease-in-out infinite 1.75s;
 }
 
 .tech1 {
-  
-  animation: fadeIn ease 4s;
+  animation: fadeIn ease 3s, shine ease-in-out infinite 1.75s;
+  animation-delay: 0s, .5s;
 }
 
 .tech2 {
-  animation: fadeIn ease 6s;
+  animation: fadeIn ease 4s, shine ease-in-out infinite 1.75s;
+  animation-delay: 0s, 1s;
 }
 
 
-.languages, .frameworks, .libraries, .testing {
-  animation: slide ease infinite 7s;
+.languagesyes, .frameworksyes, .librariesyes, .testingyes {
+  margin-top: 6em;
+  animation: slide ease infinite 5s;
+  
+  li > h1 {
+    text-shadow: var(--LightGreen) 1px 1px 1px;
+  }
+}
+
+.techCategory {
+  text-shadow: var(--TerraCotta) 1px 1px 1px;
+  
+}
+
+.allTech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  margin-left: 8em;
 }
 
 @keyframes slide {
   0% {transform: translate(50em, 0);}
-  5% {transform: translate(0, 0);}
-  95% {transform: translate(0,0);}
+  5% {transform: translate(10em, 0);}
+  6% {transform: translate(12em, 0);}
+  7% {transform: translate(10em, 0);}
+  8% {transform: translate(11em, 0);}
+  9% {transform: translate(10em, 0);}
+  95% {transform: translate(10em, 0);}
   100% {transform: translate(-50em, 0);}
 }
 
 @keyframes fadeIn {
   0% {opacity: 0;}
-  50% {opacity: 0;}
+  70% {opacity: 0;}
   100% {opacity: 1;}
+}
+
+@keyframes glimmer {
+  0% {color: var(--Ebony);}
+  25% {color: var(--Ebony);}
+  50% {color: var(--Ebony-dark);}
+  75% {color: var(--Ebony)}
+  100% {color: var(--Ebony);}
+
+}
+
+@keyframes shine {
+  0% {text-shadow: var(--CadetBlue) 1px 1px 1px;}
+  50% {text-shadow: var(--Alabaster) 2px 2px 2px; color: var(--Ebony)}
+  100% {text-shadow: var(--CadetBlue) 1px 1px 1px;}
 }

@@ -9,7 +9,7 @@ export const tech = [
   },
   {
     name: 'libraries',
-    items: ['Redux', 'Express']
+    items: ['Redux', 'Express', 'BCrypt']
   },
   {
     name: 'testing',

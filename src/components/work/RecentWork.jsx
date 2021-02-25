@@ -10,26 +10,27 @@ const RecentWork = () => {
 
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshhold: .3,
+    threshold: .3,
   });
 
   return (
-    <div className={styles.bigBox}>
+    <div
+      ref={ref}
+      className={styles.bigBox}>
       <h1
-        className={inView ? styles.proHeadline : styles.proHeadlineHidden}
-        ref={ref} 
+        className={styles.proHeadline} 
       >Professional Work
       </h1>
-      <div
-        className={inView ? styles.workBox : null}
-        ref={ref}>
+      <div className={styles.workBox}>
         <ContactElement page={'work-page'} />
         <h1
-          className={inView ? styles.subHeadline : null}
+          className={styles.subHeadline}
         >{amphead.name}
         </h1>
-        <div className={styles.picBox}>
-          <img className={inView ? styles.workPic : null}
+        <div   className={styles.picBox}>
+          <img
+            
+            className={inView ? styles.workPic : styles.hidden}
             src={amphead.imgUrl}/>
           <p className={styles.workDescription}>{amphead.description}</p>
           <a href={amphead.siteLink}>visit amphead.com</a>

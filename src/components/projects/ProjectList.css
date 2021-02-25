@@ -2,6 +2,7 @@
   margin-left: 5em;
   font-family: 'Inconsolata';
   color: var(--Ebony-Dark);
+  text-shadow: var(--Alabaster) 1px 1px 1px;
   animation: fadeIn ease 1s;
 }
 

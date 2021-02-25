@@ -2,18 +2,24 @@
   box-sizing: border-box;
 }
 
+.sectionZero {
+  min-height: 100vh;
+  padding: 0;
+}
+
 .sectionOne {
   position: relative;
   display: flex;
   flex-direction: column;
   max-width: 100vw;
   overflow: hidden;
-  background-image: url('https://www.visittheusa.com/sites/default/files/styles/hero_l_x2/public/images/hero_media_image/2017-04/048df232dcf31e992cb9143f695f416e.jpeg?itok=InJXzMRV');
+  background-image: url('https://i.imgur.com/Et8ADaL.jpg');
   height: 80%;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
+   
   
   transform: translateZ(-1px) scale(1.1);
   
@@ -26,6 +32,22 @@
   overflow: hidden;
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/e/ef/Mount_Hood_reflected_in_Mirror_Lake%2C_Oregon.jpg');
   height: 70%;
+  position: relative;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+  transform: translateZ(-1px) scale(1.1);
+}
+
+.sectionThree {
+  display: flex;
+  flex-direction: column;
+  max-width: 100vw;
+  overflow: hidden;
+  background-image: url('https://lh3.googleusercontent.com/dbPMWDzMiPTyGhtsupi2m_UzfxbAGUJdsgfuWFWltxPzO6QUC45-Btw3IMmdGkB3ms59840GUjHsXLDMGRNRgFsCOfYYClOxBHwDZSxrL9XOhItvEiAyxsC-BhJH1pEs6k8zKEI1o94FUKiAPny1tpaDzg0mX5RYfG3PElAWXNDyoyluCIu_UxAKG8D9i4vAWh_T3PnIFIWvnUi759ReT9HZr8-K46VbTTeppHS5rO0QNa2kH6k72JqehJX7CvF5PIOxl89uWjx6hbIXKt03lD8NQ7la7stlzs9wj1orVF8klqTKUmZDkfHaSRekCW54XlqPJbS6bNwCQg-ScXKE_6UH1PmmfYmBehJPloPs3-PHw8oZ8XDqRP4lpGHEP4VRrwTuVPkqj989Aiq_UZhegMl0uBBCTNQbUF_g14tRgSVcpvFUWDC4dj-45p0gHC-wnRjBZVB9RiX1CehpwjOnN1Zk1WvV-K3w6yTfy3Mwx8rFXPbcofx7CNlIANT2i3HFFZwxiL_H73GTw1eeNh27EuoaeG2NwtoKqPGo_bQqVY8bi46dY4QXQuPcsIZLeOLLgrQac_BW7jQjpBw5GZHrHtRyo8_WxaGLPR-8Q5aGFUNW-d3aqIZrmLrf-90nfQm-nrVMyFrM47WwBJfWpI6M6KS6Dez3S8wUdHSbE47NHDY1ljv-Vhqt3steP3A8goBFkslHbYn_gSqu1EkzSIusWaBV=w920-h690-no?authuser=0');
+  height: 80%;
   position: relative;
   background-position: center;
   background-attachment: fixed;

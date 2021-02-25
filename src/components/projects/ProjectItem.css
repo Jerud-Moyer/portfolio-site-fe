@@ -17,6 +17,10 @@
   --Alabaster: #E6EBE0;
 }
 
+.invisible {
+  visibility: hidden;
+}
+
 .projectItem {
   display: flex;
   flex-direction: column;
