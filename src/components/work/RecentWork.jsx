@@ -22,7 +22,7 @@ const RecentWork = () => {
       >Professional Work
       </h1>
       <div className={styles.workBox}>
-        <ContactElement page={'work-page'} />
+      
         <h1
           className={styles.subHeadline}
         >{amphead.name}

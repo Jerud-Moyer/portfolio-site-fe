@@ -1,0 +1,21 @@
+.picFlip {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  img{
+    max-width: 40em;
+    max-height: 40em;
+  }
+
+  section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    div {
+      font-size: 2em;
+    }
+  }
+}

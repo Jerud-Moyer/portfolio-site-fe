@@ -1,4 +1,6 @@
 import React from 'react';
+import SectionFive from '../sections/SectionFive';
+import SectionFour from '../sections/SectionFour';
 import SectionOne from '../sections/SectionOne';
 import SectionThree from '../sections/SectionThree';
 import SectionTwo from '../sections/SectionTwo';
@@ -13,6 +15,8 @@ const Portfolio = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
+      <SectionFive />    
     </div>
   );
 };

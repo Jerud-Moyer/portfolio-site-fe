@@ -38,8 +38,12 @@ li {
   color: var(--LightGreen);
 }
 
+.point0, .point1, .point2, .point3 {
+  font-size: 1.25em;
+}
+
 .bulletBox {
-  margin: -2em 0 0 2em;
+  margin: -3em 0 0 -7em;
 }
 
 @keyframes fadeIn {

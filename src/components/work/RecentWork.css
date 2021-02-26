@@ -55,7 +55,7 @@
   position: relative;
   display: flex;
   flex-direction: grid;
-  grid-template-columns: 1fr 1fr 6fr;
+  grid-template-columns: 1fr 4fr;
   margin: 3vh 0 5vh 0;
   padding: 5vh 5vw 5vh 5vw;
   animation: fadeIn ease 5s;
@@ -69,7 +69,7 @@
   align-items: center;
   justify-content: center;
   padding-left: 6.25em;
-  margin: 0 5em 0 5em;
+  margin: 0 1em 0 11em;
   
   a {
     text-decoration: none;

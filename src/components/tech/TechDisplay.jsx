@@ -11,10 +11,10 @@ const TechDisplay = () => {
 
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: .5,
+    threshold: .8,
   });
 
-  const delay = inView
+  const delay = inView && (index <= 3)
     ? 5000
     : null;
  

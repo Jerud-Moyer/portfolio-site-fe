@@ -1,0 +1,8 @@
+.bioPage {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  justify-content: space-between;
+  padding: 2em;
+  min-height: 100vh;
+  background: var(--CadetBlue);
+}
