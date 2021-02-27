@@ -29,9 +29,10 @@ const TechComponent = ({ techType, isAnimated }) => {
         
         className={inView ? styles[`${type}${isAnimated}`]
           : styles.invisible} >
-        <li ><h1 className={styles.techCategory}>
-          {techType.name}
-        </h1>
+        <li>
+          <h1 className={styles.techCategory}>
+            {techType.name}
+          </h1>
         </li >
         {techItems}
       </ul>

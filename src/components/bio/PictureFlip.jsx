@@ -3,33 +3,65 @@ import { bioPics } from '../../data/bio';
 import styles from './bio.css';
 
 const PictureFlip = () => {
-  const [index, setIndex] = useState(0);
-
-  const { imageUrl, caption } = bioPics[index];
+  const [current, setCurrent] = useState(0);
+  const length = bioPics.length;
 
   const handleClickPlus = () => {
-    (index <= bioPics.length - 2)
-      ? setIndex(index => index + 1)
-      : setIndex(bioPics.length - 1);
-    console.log(index);
+    setCurrent((current === length - 1)
+      ? 0
+      : current + 1);
   };
 
   const handleClickMinus = () => {
-    (index > 0)
-      ? setIndex(index => index - 1)
-      : setIndex(0);
-    console.log(index);
+    setCurrent((current === 0)
+      ? length - 1
+      : current - 1);
+   
   };
+  
+
+  const indicators = bioPics.map((pic, index) => (
+    <div 
+      key={pic.imageUrl} 
+      className={(index === current) 
+        ? styles.indicatorActive
+        : styles.indicator}>
+    </div>
+  ));
 
   return (
-    <div className={styles.picFlip} >
-      <div>
-        <img src={imageUrl} alt={caption}/>
+    <div>
+      <div className={styles.picFlip} >
+        <div className={styles.frame} >
+          {bioPics.map((pic, index) => {
+            return (
+              <div
+                key={index}>
+                {(index === current) && (
+                  <>
+                    <img
+                      className={(index === current)
+                        ? styles.picActive
+                        : styles.pic}
+                      src={pic.imageUrl}
+                      alt={pic.caption}
+                    />
+                    <h4 
+                      className={styles.caption}>
+                      {pic.caption}
+                    </h4>
+                  </>
+                )}
+              </div>
+            );
+          })}
+        </div>
+        <section>
+          <div onClick={handleClickMinus}>《</div>
+          {indicators}
+          <div  onClick={handleClickPlus}>》</div>
+        </section>
       </div>
-      <section>
-        <div onClick={handleClickMinus}>《</div>
-        <div  onClick={handleClickPlus}>》</div>
-      </section>
     </div>
   );
 };
