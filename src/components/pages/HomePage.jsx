@@ -15,7 +15,9 @@ const HomePage = () => {
         </div>
         <ContactElement page={'home-page'}/>
       </div>
-      <FactDisplay />
+      <div className={styles.factBox}>
+        <FactDisplay />
+      </div>
     </div>
   );
 };

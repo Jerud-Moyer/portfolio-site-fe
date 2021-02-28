@@ -17,6 +17,26 @@
   --Alabaster: #E6EBE0;
 }
 
+.bio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+
+  h1 {
+    font-family: 'inconsolata';
+    text-shadow: var(--Alabaster) 1px 1px 1px;
+    font-size: 2em;
+    color: var(--Ebony-Dark);
+  }
+
+  h3 {
+    font-family: 'Montserrat';
+    width: 80vw;
+    color: var(--Ebony-Dark);
+  }
+}
+
 
 .pic {
   opacity: 0;
@@ -56,6 +76,7 @@
     height: 40rem;
     padding-top: 5em;
     background: var(--Opal);
+    animation: fadeIn 2s ease;
   }
 
   .caption {
@@ -80,6 +101,7 @@
       font-size: 2em;
       margin: .5em 1em 0 1em;
       transition: .5s ease;
+      animation: ebonyFade ease-in-out infinite 1s;
     }
 
     div:hover {
@@ -92,7 +114,7 @@
       height: .3em;
       border: solid var(--Opal) 2px;
       border-radius: 100%;
-      margin: 1em 1em 1em 1em;
+      margin: 1em .25em .5em .25em;
       transition: .5s ease;
     }
 
@@ -105,7 +127,7 @@
       height: .3em;
       border: solid var(--Opal) 2px;
       border-radius: 100%;
-      margin: 1em 1em 0 1em;
+      margin: 1em .25em .5em .25em;
     
     }
   }
@@ -114,4 +136,10 @@
 @keyframes fadeIn {
   0% {opacity: 0; transform: scale(.6)}
   100% {opacity: 1; transform: scale(1)}
+}
+
+@keyframes ebonyFade {
+  0% {color: var(--Ebony)}
+  50% {color: var(--Ebony-dark);}
+  100% {color: var(--Ebony);}
 }

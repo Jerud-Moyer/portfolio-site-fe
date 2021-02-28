@@ -57,6 +57,10 @@
   
 }
 
+.factBox {
+  margin-top: 6rem;
+}
+
 
 @keyframes shadowColor {
   0% {text-shadow: none}
