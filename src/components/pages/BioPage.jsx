@@ -15,9 +15,7 @@ const BioPage = () => {
     <div className={styles.bioPage} ref={ref} >
       {(inView) && 
         <>
-          <article >
-            <Bio />
-          </article>
+          
           <section>
             <div className={styles.contact}>
               <ContactElement page={'bio'} />

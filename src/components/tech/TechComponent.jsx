@@ -7,7 +7,7 @@ import { useInView } from 'react-intersection-observer';
 const TechComponent = ({ techType, isAnimated }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: .7,
+    threshold: .3,
   });
 
   const type = techType.name;
@@ -26,7 +26,6 @@ const TechComponent = ({ techType, isAnimated }) => {
     <div ref={ref} className={styles.componentBox} >
       {inView &&
       <ul
-        
         className={inView ? styles[`${type}${isAnimated}`]
           : styles.invisible} >
         <li>

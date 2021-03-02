@@ -1,11 +1,11 @@
 import React from 'react';
-import BioPage from '../pages/BioPage';
+import Bio from '../bio/Bio';
 import styles from './Section.css';
 
 const SectionFour = () => {
   return (
-    <div className={styles.sectionFourIsPlaceholder} >
-      <BioPage />
+    <div className={styles.sectionFour} >
+      <Bio />
     </div>
   );
 };

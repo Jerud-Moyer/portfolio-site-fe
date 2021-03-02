@@ -11,7 +11,7 @@ const TechDisplay = () => {
 
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: .8,
+    threshold: .3,
   });
 
   const delay = inView && (index <= 3)
@@ -24,19 +24,19 @@ const TechDisplay = () => {
 
   return (
     <div ref={ref} >
-      { (index <= 3) && 
+      { (index <= 3) &&
+      <div className={styles.oneTech}> 
         <TechComponent techType={techType} isAnimated={'yes'} />
+      </div>
       }
       { (index >= 4) &&
-      <div className={styles.allTech} >
-        <div>
-          <TechComponent techType={tech[0]} />
-          <TechComponent techType={tech[1]} />
-        </div>
-        <div>
-          <TechComponent techType={tech[2]} />
-          <TechComponent techType={tech[3]} />
-        </div>
+      <div className={inView ? styles.allTech : styles.invisible} >
+        
+        <TechComponent techType={tech[0]} />
+        <TechComponent techType={tech[1]} />
+        <TechComponent techType={tech[2]} />
+        <TechComponent techType={tech[3]} />
+        
       </div>
       }
     </div>

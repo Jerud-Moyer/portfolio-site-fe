@@ -21,19 +21,41 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 80vh;
+  padding-top: 5vh;
+  height: 50vh;
+  background: var(--CadetBlue);
   
+  
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 1s ease;
+
+    p {
+      color: var(--Ebony-Dark);
+      font-size: 10em;
+      margin: 0px 10px 18px 10px;
+      animation: fadeIn 1s ease;
+    }
+  }
 
   h1 {
     font-family: 'inconsolata';
     text-shadow: var(--Alabaster) 1px 1px 1px;
     font-size: 2em;
     color: var(--Ebony-Dark);
+    animation: fadeIn 1s ease;
   }
 
   h3 {
     font-family: 'Montserrat';
-    width: 80vw;
+    text-align: center;
+    width: 60vw;
     color: var(--Ebony-Dark);
+    font-size: 1.25em;
   }
 }
 
@@ -45,7 +67,7 @@
 
  .picActive {
   position: relative;
-  border: var(--Ebony-Dark) solid 1px;
+  border: var(--Alabaster) solid 1px;
   border-radius: 10px;
   max-width: 30rem;
   max-height: 30rem;
@@ -67,24 +89,29 @@
     position: relative;
     overflow: hidden;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     border: solid var(--Ebony-Dark) 3px;
     border-radius: 10px;
-    box-shadow: var(--Ebony) inset 2px 2px 2px;
+    box-shadow: var(--Alabaster) inset 1px 1px 14px 2px;
     width: 40rem;
     height: 40rem;
-    padding-top: 5em;
+    padding: 4em 0 0 0;
     background: var(--Opal);
     animation: fadeIn 2s ease;
   }
 
+  
+
   .caption {
-    margin: 3em;
-    text-align: center;
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: 'Montserrat';
     font-size: 1em;
+    text-align: center;
     animation: fadeIn 1s ease;
   }
 
