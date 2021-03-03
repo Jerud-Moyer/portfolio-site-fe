@@ -63,8 +63,8 @@
 }
 
 @keyframes slidIn {
-  0% {left: 60em}
-  25%{left: 25em}
+  0% {left: 65em}
+  25%{left: 30em}
   50% {right: 40em}
   75% {right: 5em}
   100% {right: 5em}

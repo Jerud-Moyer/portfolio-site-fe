@@ -1,9 +1,9 @@
 import React from 'react';
-import email from '../../assets/email-ebony.png';
-import linkedIn from '../../assets/linkedin-ebony.png';
-import twitter from '../../assets/twitter-ebony.png';
-import github from '../../assets/github-ebony.png';
-import resume from '../../assets/pdf-icon-ebony.png';
+import email from '/public/assets/email-ebony.png';
+import linkedIn from '/public/assets/linkedin-ebony.png';
+import twitter from '/public/assets/twitter-ebony.png';
+import github from '/public/assets/github-ebony.png';
+import resume from '/public/assets/pdf-icon-ebony.png';
 import styles from './ContactElement.css';
 import PopUp from './PopUp';
 import { PropTypes } from 'prop-types';

@@ -28,7 +28,11 @@ const ProjectList = () => {
     >
       
       <>
-        <h1 className={styles.headline}>Projects</h1>
+        <h1 className={inView 
+          ? styles.headline 
+          : styles.invisible }
+        >Projects
+        </h1>
         <ul className={styles.projectList} >
           {projectElements}
         </ul>

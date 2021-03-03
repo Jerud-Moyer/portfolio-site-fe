@@ -7,18 +7,22 @@ const ContactForm = ({ formId }) => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
+  const [messageSent, setMessageSent] = useState(false);
+  const flag = 'This message was sent via jerud-moyer.dev';
 
   const handleSubmit = e => {
     e.preventDefault();
     sendMessage({
       name,
       email,
-      message
+      message,
+      flag
     });
 
     setName('');
     setEmail('');
     setMessage('');
+    setMessageSent(true);
   };
 
   const handleChange = ({ target }) => {
@@ -29,6 +33,9 @@ const ContactForm = ({ formId }) => {
 
   return (
     <div className={styles.contact}>
+      {messageSent &&
+      <h1>Thanks for reaching out!</h1>
+      }
       <label
         htmlFor={`form-checkbox${formId}`}
         className={styles.Xbox}

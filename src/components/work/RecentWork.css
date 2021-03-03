@@ -33,7 +33,7 @@
  position: relative;
  margin: 0 0 0 0;
  padding-bottom: 5em;
- min-height: 100vh;
+ min-height: 110vh;
  max-height: 120vh;
  width: 100vw;
  background-color: var(--CadetBlue);
@@ -91,10 +91,11 @@
 }
 
 .workPic {
-  width: 20em;
-  border: solid black 1px;
+  width: 23em;
+  border: solid var(--Alabaster) 1px;
   border-radius: 10px;
   box-shadow: var(--Ebony) 8px 7px 10px;
+  margin:0 .5em 1.25em 0;
   animation: shrink ease 3s;
 }
 
