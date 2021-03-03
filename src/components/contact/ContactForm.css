@@ -26,6 +26,14 @@
   justify-content: center;
   z-index: 3;
 
+  h1 {
+    position: absolute;
+    top: -1em;
+    left: .75em;
+    font-family: 'Inconsolata';
+    color: var(--Ebony-Dark);
+  }
+
   form {
     display: flex;
     flex-direction: column;

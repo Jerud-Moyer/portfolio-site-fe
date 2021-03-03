@@ -54,7 +54,7 @@
 }
 
 .projectPicInView {
-  width: 12em;
+  width: 16em;
   border: solid black 1px;
   border-radius: 5px;
   box-shadow: var(--Ebony) 3px 3px 5px;

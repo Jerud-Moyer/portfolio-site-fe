@@ -2,8 +2,8 @@ import React from 'react';
 import ContactElement from '../contact/ContactElement';
 import styles from './BioPage.css';
 import PictureFlip from '../bio/PictureFlip';
-import Bio from '../bio/Bio';
 import { useInView } from 'react-intersection-observer';
+import FactDisplay from '../facts/FactDisplay';
 
 const BioPage = () => {
   const [ref, inView] = useInView({ 
@@ -34,6 +34,7 @@ const BioPage = () => {
             </aside>
 
           </section>
+          <FactDisplay />
         </>
       }
     </div>
