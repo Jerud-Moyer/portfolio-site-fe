@@ -1,0 +1,75 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.homePage {
+  display: block;
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  padding: .5em 2.75em 0em 0em;
+  margin-bottom: 3em;
+  
+  background-color: var(--Ebony);
+  
+}
+
+.topBox {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2em;
+}
+
+
+.headline {
+  margin-top: 1em;
+  margin-left: 2em;
+  font-family: 'Inconsolata';
+  font-size: 4em;
+  color: var(--Ebony-Dark);
+  animation-delay: 5s;
+  animation: shadowColor ease infinite 20s;
+}
+
+.infoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  animation: shrink ease 5s;
+  
+  
+}
+
+.factBox {
+  margin-top: 6rem;
+}
+
+
+@keyframes shadowColor {
+  0% {text-shadow: none}
+  25% {text-shadow: var(--CadetBlue) 1px 1px}
+  50% {text-shadow: none}
+  75% {text-shadow: var(--TerraCotta) 1px 1px}
+}
+
+@keyframes shrink {
+  from {transform: scale(2); }
+  to {transform: scale(1); }
+}

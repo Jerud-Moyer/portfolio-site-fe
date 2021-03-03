@@ -1,0 +1,36 @@
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.detailBox {
+  img{
+  max-width: 60vw;
+  max-height: 60vh;
+  }
+}
+
+.yellow {
+  background-color: var(--YellowGreenCrayola); 
+}
+
+.green {
+  background-color: var(--LightGreen);
+}
+
+.blue {
+  background-color: var(--AeroBlue);
+}
+
+.red {
+  background-color: var(--TerraCotta);
+}

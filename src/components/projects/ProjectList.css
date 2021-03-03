@@ -1,0 +1,26 @@
+.headline {
+  margin-left: 5em;
+  font-family: 'Inconsolata';
+  color: var(--Ebony-Dark);
+  text-shadow: var(--Alabaster) 1px 1px 1px;
+  animation: fadeIn ease 1s;
+}
+
+.projectBox {
+  padding: 4em;
+  animation: fadeIn ease 1s;
+}
+
+.projectList {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  
+}
+
+
+@keyframes fadeIn {
+  from {opacity:0}
+  to {opacity: 1}
+}

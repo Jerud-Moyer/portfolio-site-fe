@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.invisible {
+  visibility: hidden;
+}
+
+.projectItem {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 1.5em;
+}
+
+.name {
+  font-family: 'Inconsolata';
+}
+
+.projectItem > * {
+  margin: .5em 0 0 .5em;
+  text-decoration: none;
+  color: var(--Ebony-Dark);
+} 
+
+.projectItem > a {
+  animation: ebonyFade ease infinite 3s;
+  transition: ease .5s;
+}
+
+.projectItem > a:hover {
+  transform: scale(1.25);
+  color: var(--TerraCotta);
+}
+
+.projectPic {
+
+  width: 12em;
+}
+
+.projectPicInView {
+  width: 12em;
+  border: solid black 1px;
+  border-radius: 5px;
+  box-shadow: var(--Ebony) 3px 3px 5px;
+  animation: jump ease 1s;
+  
+}
+
+
+
+.description {
+  width: 10em;
+}
+
+@keyframes ebonyFade {
+  0% {color: var(--Ebony)}
+  50% {color: var(--Ebony-Dark)}
+  100% {color: var(--Ebony)}
+}
+
+@keyframes jump {
+  0% {transform: translate(0%, 0%);}
+  25% {transform: translate(0%, -20%)}
+  50% {transform: translate(0%, 0%);}
+  75% {transform: translate(0%, -10%);}
+  100% {transform: translate(0%, 0%);}
+}

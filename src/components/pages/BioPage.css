@@ -1,0 +1,75 @@
+.bioPage {
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4.5em;
+  min-height: 100vh;
+  background: var(--CadetBlue);
+  margin-top: 0;
+  
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 2s ease;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    align-items: center;
+
+    .contact {
+      margin-bottom: 11em;
+    }
+  }
+
+  aside {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 7em 0;
+    padding: 0 1em 0 0;
+    animation: fadeIn 2s ease;
+
+    h3 {
+      font-family: 'Inconsolata';
+      font-size: 2.5em;
+      color: var(--Ebony-Dark);
+    }
+
+    a {
+      text-decoration: none;
+      text-align: center;
+      font-family: 'Montserrat';
+      font-size: 1.15em;
+      cursor: pointer;
+      color: var(--Ebony-Dark);
+      margin: 1em;
+      transition: 1s ease;
+      animation: ebonyFade ease-in-out infinite 1s;
+    }
+
+    a:hover {
+    transform: scale(1.5);
+    } 
+  }
+
+}
+
+@keyframes ebonyFade {
+  0% {color: var(--Ebony)}
+  50% {color: var(--Ebony-dark);}
+  100% {color: var(--Ebony);}
+}
+
+@keyframes fadeIn {
+  0% {opacity: 0; transform: scale(.6)}
+  100% {opacity: 1; transform: scale(1)}
+}

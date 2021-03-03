@@ -1,0 +1,52 @@
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+li {
+  font-family: 'Montserrat';
+  list-style: none;
+}
+
+.point0 {
+  animation: fadeIn ease 7s;
+  color: var(--CadetBlue)
+}
+
+.point1 {
+  animation: fadeIn ease 8s;
+  color: var(--PaleSpringBud);
+}
+
+.point2 {
+  animation: fadeIn ease 9s;
+  color: var(--TerraCotta);
+}
+
+.point3 {
+  animation: fadeIn ease 10s;
+  color: var(--LightGreen);
+}
+
+.point0, .point1, .point2, .point3 {
+  font-size: 1.25em;
+}
+
+.bulletBox {
+  margin: -3em 0 0 -7em;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0; transform: rotate(10deg)}
+  to {opacity: 1; transform: rotate(0)}
+}

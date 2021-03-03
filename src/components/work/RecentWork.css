@@ -1,0 +1,109 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.proHeadline {
+  margin: 2em 0 2em 6em;
+  font-family: 'Inconsolata';
+  color: var(--Ebony-Dark);
+  text-shadow: var(--Alabaster) 1px 1px 1px;
+  animation: fadeIn ease 2s;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.bigBox {
+ position: relative;
+ margin: 0 0 0 0;
+ padding-bottom: 5em;
+ min-height: 100vh;
+ max-height: 120vh;
+ width: 100vw;
+ background-color: var(--CadetBlue);
+ overflow: hidden;
+}
+
+
+
+.subHeadline {
+  margin: 3em 0 0 4em;
+  font-family: 'Inconsolata';
+  color: var(--Ebony-Dark);
+  animation: fadeIn ease 5s;
+}
+
+
+
+.workBox {
+  position: relative;
+  display: flex;
+  flex-direction: grid;
+  grid-template-columns: 1fr 4fr;
+  margin: 3vh 0 5vh 0;
+  padding: 5vh 5vw 5vh 5vw;
+  animation: fadeIn ease 5s;
+
+  
+}
+
+.picBox {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-left: 6.25em;
+  margin: 0 1em 0 11em;
+  
+  a {
+    text-decoration: none;
+    font-family: 'Montserrat';
+    color: var(--Ebony-Dark);
+    transition: ease .5s;
+  }
+  
+  a:hover {
+    transform: scale(1.25);
+  
+  }
+}
+
+.workDescription {
+  font-family: 'Montserrat';
+  width: 30vw;
+  color: var(--Ebony-Dark);
+}
+
+.workPic {
+  width: 20em;
+  border: solid black 1px;
+  border-radius: 10px;
+  box-shadow: var(--Ebony) 8px 7px 10px;
+  animation: shrink ease 3s;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes shrink {
+  from {transform: scale(2) rotate(10deg);}
+  to {transform: scale(1) rotate(0)}
+}

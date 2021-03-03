@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.yellow, .green, .blue, .red {
+  position: relative;
+  max-width: 70vw;
+  margin-top: 4em;
+  padding: 2px;
+  height: 3.5vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Montserrat';
+  border-radius: 14px;
+  border: solid black 1px;
+  box-shadow: var(--Ebony-Dark) 2px 3px 5px;
+  overflow: hidden;
+
+  animation: slidIn ease infinite 10s;
+}
+
+.fact {
+  animation: fade ease infinite 5s;
+}
+
+.link {
+  color: var(--Ebony-Dark);
+  text-decoration: none;
+}
+
+
+.yellow {
+  background-color: var(--YellowGreenCrayola); 
+}
+
+.green {
+  background-color: var(--LightGreen);
+}
+
+.blue {
+  background-color: var(--CadetBlue);
+}
+
+.red {
+  background-color: var(--TerraCotta);
+}
+
+@keyframes slidIn {
+  0% {left: 60em}
+  25%{left: 25em}
+  50% {right: 40em}
+  75% {right: 5em}
+  100% {right: 5em}
+}
+
+
+@keyframes slide {
+  0%  {transform: translate();}
+  25% {transform: translate(-35em);}
+  50% {right: 40em}
+  75% {transform: translate(35em);}
+  100% {right: 5em;}
+}
+
+@keyframes fade {
+ 0% {opacity: 0}
+ 5% {opacity: 0}
+ 70% {opacity: 1}
+ 85% {opacity: 1}
+ 90% {opacity: 0}
+ 100% {opacity: 0} 
+}

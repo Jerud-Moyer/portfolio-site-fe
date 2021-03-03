@@ -1,0 +1,41 @@
+.contactBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 100px;
+  margin-top: 3em;
+  animation: fadeIn ease 8s;
+  
+  
+}
+
+
+
+.mediaPic {
+  position: relative;
+  width: 4em;
+  margin: .5em;
+  transition: .5s ease-in-out;
+}
+
+.mediaPic:hover {
+  transform: scale(1.5);
+}
+
+.popUpBox {
+  position: relative;
+  display: block;
+}
+
+
+
+
+@keyframes fadeIn {
+  from {opacity: 0}
+  to {opacity: 1}
+}
+
+@keyframes grow {
+  from {transform: scale(1)}
+  to {transform: scale(1.5)}
+}
