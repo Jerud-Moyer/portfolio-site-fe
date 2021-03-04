@@ -36,8 +36,9 @@
  min-height: 110vh;
  max-height: 120vh;
  width: 100vw;
- background-color: var(--CadetBlue);
  overflow: hidden;
+ background: linear-gradient(45deg, hsla(203, 94%, 39%, 1) 0%, hsla(201, 54%, 69%, 1) 0.3333333333333333%, hsla(184, 31%, 51%, 1) 0.6666666666666666%);
+ background-size: contain;
 }
 
 
