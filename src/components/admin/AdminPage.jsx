@@ -1,13 +1,11 @@
 import React from 'react';
-import AdminFactList from './AdminFactList';
-
-
+import FactList from '../facts/FactList';
 
 const AdminPage = () => {
   return (
     <div>
       
-      <AdminFactList />
+      <FactList forAdmin={true}/>
     </div>
   );
 };

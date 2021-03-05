@@ -5,6 +5,7 @@ import PictureFlip from '../bio/PictureFlip';
 import { useInView } from 'react-intersection-observer';
 import FactDisplay from '../facts/FactDisplay';
 
+
 const BioPage = () => {
   const [ref, inView] = useInView({ 
     triggerOnce: true,
@@ -34,7 +35,7 @@ const BioPage = () => {
             </aside>
 
           </section>
-          <FactDisplay />
+      
         </>
       }
     </div>

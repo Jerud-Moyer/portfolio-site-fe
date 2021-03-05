@@ -1,0 +1,36 @@
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.fact {
+  margin: 5em;
+
+  .factLink {
+    text-decoration: none;
+  }
+
+  img {
+    min-width: 20em;
+    max-width: 40em;
+    max-height: 40em;
+    border: var(--Alabaster) solid 2px;
+    border-radius: 10px;
+    box-shadow: var(--Ebony-Dark) 4px 4px 4px;
+  }
+  
+  p {
+    color: var(--Alabaster);
+
+  }
+}
