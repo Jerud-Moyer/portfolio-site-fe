@@ -36,7 +36,12 @@
   animation: slidIn ease infinite 10s;
 
   @media screen and (max-width: 781px) {
-    animation: none;
+    animation: slide ease infinite 10s;
+  }
+
+  @media screen  and (max-width: 414px) {
+    height: 3em;
+    width: 90vw;
   }
 }
 
@@ -78,11 +83,12 @@
 
 
 @keyframes slide {
-  0%  {transform: translateX();}
-  25% {transform: translateX(-35em);}
-  50% {right: 40em}
-  75% {transform: translateX(35em);}
-  100% {right: 5em;}
+  0%  {transform: translateX(55em);}
+  25% {transform: translateX(-.5em);}
+  50% {transform: translateX(-.5em);}
+  51% {transform: translateX(-55em);}
+  75% {transform: translateX(-.5em);}
+  100% {transform: translateX(-.5em);}
 }
 
 @keyframes fade {

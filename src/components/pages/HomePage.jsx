@@ -19,7 +19,9 @@ const HomePage = () => {
       <div className={styles.factBox}>
         <FactDisplay />
       </div>
-      <ScrollArrow/>    
+      <div className={styles.arrowBox} >
+        <ScrollArrow/>
+      </div>    
     </div>
   );
 };

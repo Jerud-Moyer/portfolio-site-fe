@@ -40,10 +40,22 @@ li {
 
 .point0, .point1, .point2, .point3 {
   font-size: 1.25em;
+
+  @media screen  and (max-width: 414px) {
+    font-size: 1em;
+  }
 }
 
 .bulletBox {
   margin: -3em 0 0 -7em;
+
+  @media screen and (max-width: 781px) {
+    margin: -2em 0 0 -10em;
+  }
+
+  @media screen  and (max-width: 414px) {
+    margin: -1em 0 0 -3em;
+  }
 }
 
 @keyframes fadeIn {

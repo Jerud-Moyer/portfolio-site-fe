@@ -26,6 +26,11 @@
   margin-bottom: 3em;
   
   background-color: var(--Ebony);
+
+  @media screen  and (max-width: 414px) {
+    padding: 0 0 0 0;
+    margin-top: -2em;
+  }
   
 }
 
@@ -34,6 +39,10 @@
   display: flex;
   justify-content: space-between;
   padding-right: 2em;
+
+  @media screen  and (max-width: 414px) {
+    padding: 0 0 0 0;
+  }
 }
 
 
@@ -45,6 +54,15 @@
   color: var(--Ebony-Dark);
   animation-delay: 5s;
   animation: shadowColor ease infinite 20s;
+
+  @media screen and (max-width: 781px) {
+    font-size: 5em;
+    margin-left: 1em;
+  }
+
+  @media screen  and (max-width: 414px) {
+    margin-left: .25em;
+  }
 }
 
 .infoBox {
@@ -59,6 +77,16 @@
 
 .factBox {
   margin-top: 6rem;
+
+  @media screen  and (max-width: 414px) {
+    margin-top: -2em;
+  }
+}
+
+.arrowBox {
+  position: absolute;
+  bottom: -1em;
+  left: -5em;
 }
 
 
