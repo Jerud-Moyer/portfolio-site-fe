@@ -11,6 +11,7 @@ import styles from './app.css';
 import UpdateFact from '../admin/UpdateFact';
 import CreateFact from '../admin/CreateFact';
 import Portfolio from '../portfolio/Portfolio';
+import FactListPage from '../pages/FactListPage';
 
 
 export default function App() {
@@ -19,7 +20,7 @@ export default function App() {
       <Router>
         <Switch>
           <Route exact path="/" component={Portfolio} />
-          <Route exact path="/list" component={FactList} />
+          <Route exact path="/list" component={FactListPage} />
           <Route exact path="/detail/:id" component={FactDetail} />
           <Route exact path="/admin" component={AdminPage} />
           <Route exact path="/UpdateFact/:id" component={UpdateFact} />

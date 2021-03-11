@@ -5,6 +5,7 @@
 .sectionZero {
   min-height: 100vh;
   padding: 0;
+  
 }
 
 .sectionOne {
@@ -70,10 +71,8 @@
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  
+
   transform: translateZ(-1px) scale(1.1);
 
   
 }
-
-

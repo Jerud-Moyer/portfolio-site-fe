@@ -3,6 +3,7 @@ import FactDisplay from '../facts/FactDisplay';
 import ContactElement from '../contact/ContactElement';
 import styles from './HomePage.css';
 import BulletPointElement from '../bullet-points/BulletPointElement';
+import ScrollArrow from '../scroll-arrow/ScrollArrow';
 
 
 const HomePage = () => {
@@ -18,6 +19,7 @@ const HomePage = () => {
       <div className={styles.factBox}>
         <FactDisplay />
       </div>
+      <ScrollArrow/>    
     </div>
   );
 };

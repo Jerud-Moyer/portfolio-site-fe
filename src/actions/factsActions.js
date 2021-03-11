@@ -34,8 +34,10 @@ export const DELETE_FACT = 'DELETE_FACT';
 
 
 export const fetchFacts = () => dispatch => {
+  dispatch(setLoading(true))
   getFacts()
     .then(facts => {
+      console.log(facts)
       dispatch(setFacts(facts));
     })
     .finally(() => dispatch(setLoading(false)));
@@ -64,12 +66,14 @@ export const createFact = fact => dispatch => {
   postFact(fact)
     .then(createdFact => {
       dispatch(appendFact(createdFact));
-    });
+    })
+    .finally(() => dispatch(setLoading(false)));
 };
 
 export const changeFact = (id, fact) => dispatch => {
   updateFact(id, fact)
     .then(updatedFact => {
       dispatch(appendFact(updatedFact));
-    });
+    })
+    .finally(() => dispatch(setLoading(false)));
 };

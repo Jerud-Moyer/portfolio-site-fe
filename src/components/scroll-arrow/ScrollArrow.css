@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
+.arrowBox {
+  animation: fadeIn 4s ease-in-out;
+  
+}
+
+.arrow {
+position: absolute;
+bottom: 0;
+left: 1em;
+color: var(--Ebony-Dark);
+font-size: 5em;
+animation: bounce 1s ease infinite;
+}
+
+@keyframes bounce {
+  0% {transform:  translateY(0); opacity: 1;}
+  
+  50% {transform: translateY(-.15em); opacity: .25;}
+  
+  100% {transform: translateY(0); opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+  
+} 

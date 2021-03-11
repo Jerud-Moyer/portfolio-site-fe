@@ -32,7 +32,7 @@ export default function reducer(state = initialState, action) {
     case APPEND_FACT:
       return {
         ...state,
-        facts: action.payload
+        facts: [...state.facts, action.payload]
       };
     default:
       return state;

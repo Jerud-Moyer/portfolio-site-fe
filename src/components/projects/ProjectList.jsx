@@ -3,6 +3,7 @@ import { useInView } from 'react-intersection-observer';
 import ProjectItem from './ProjectItem';
 import { projects } from '../../data/projects.js';
 import styles from './ProjectList.css';
+import ScrollArrow from '../scroll-arrow/ScrollArrow';
 
 const ProjectList = () => {
   
@@ -36,6 +37,9 @@ const ProjectList = () => {
         <ul className={styles.projectList} >
           {projectElements}
         </ul>
+        <div className={styles.arrowBox}>
+          <ScrollArrow />
+        </div>
       </>
       
       

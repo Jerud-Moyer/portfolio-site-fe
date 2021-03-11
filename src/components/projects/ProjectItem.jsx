@@ -7,7 +7,7 @@ const ProjectItem = ({ name, imgUrl, siteLink, gitLink, description }) => {
 
   const [ref, inView] = useInView({
     // triggerOnce: true,
-    threshold: .5,
+    threshold: .3,
   });
 
   return (
@@ -38,6 +38,8 @@ const ProjectItem = ({ name, imgUrl, siteLink, gitLink, description }) => {
     </div>
   );
 };
+
+
 
 ProjectItem.propTypes = {
   name: PropTypes.string.isRequired,

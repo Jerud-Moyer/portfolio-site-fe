@@ -100,6 +100,11 @@
   animation: shrink ease 3s;
 }
 
+.arrowBox {
+  position: absolute;
+  bottom: 6.5em;
+}
+
 @keyframes fadeIn {
   from {opacity: 0}
   to {opacity: 1}

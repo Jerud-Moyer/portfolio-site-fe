@@ -60,6 +60,12 @@
   .midDisplay {
     margin-bottom: 5em;
   }
+
+  .arrowBox {
+    position: absolute;
+    bottom: 10%;
+    left: 80%;
+  }
 }
 
 @keyframes fadeIn {
