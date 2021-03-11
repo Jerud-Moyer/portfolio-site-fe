@@ -1,6 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import { proProjects } from '../../data/proProjects';
+import ScrollArrow from '../scroll-arrow/ScrollArrow';
 import styles from './RecentWork.css';
 
 
@@ -36,6 +37,9 @@ const RecentWork = () => {
             <a href={amphead.siteLink}>visit amphead.com</a>
             <a href={amphead.gitLink}>git repo</a>
           </div>
+        </div>
+        <div className={styles.arrowBox}>
+          <ScrollArrow />
         </div>
       </>
       }

@@ -3,7 +3,7 @@
 }
 
 .headline {
-  margin-left: 5em;
+  margin-left: 8em;
   font-family: 'Inconsolata';
   color: var(--Ebony-Dark);
   text-shadow: var(--Alabaster) 1px 1px 1px;
@@ -12,20 +12,27 @@
 
 .projectBox {
   position: relative;
-  padding: 4em;
+  padding: 2em;
   height: 100vh;
   animation: fadeIn ease 1s;
 }
 
 .projectList {
   position: absolute;
-  left: 13em;
+  left: 15%;
   top: 12em;
   display: flex;
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
   
+}
+
+.arrowBox {
+  position: absolute;
+  bottom: 0;
+  left: 80%;
+  margin-bottom: 2em;
 }
 
 

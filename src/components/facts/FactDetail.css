@@ -3,6 +3,7 @@
   --LightGreen: #99F7AB;
   --YellowGreenCrayola: #ABDF75;
   --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
   --SilverSand: #C5D6D8;
   --OrchidCrayola: #FFB2E6;
   --TerraCotta: #ED6A5A;
@@ -13,9 +14,51 @@
 }
 
 .detailBox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  h3 {
+    position: absolute;
+    top: 0;
+    left: 7%;
+    font-family: 'Montserrat';
+    font-size: 1.5em;
+    color: var(--Alabaster);
+  }
+
+  h1 {
+    font-family: 'Montserrat';
+    width: 98vw;
+    text-align: center;
+    padding: 1em;
+    margin-top: 3em;
+  }
+
   img{
+  margin: 4em;
+  border: solid var(--Alabaster) 2px;
+  border-radius: 10px;
+  box-shadow: var(--Ebony-Dark) 4px 4px 4px 2px;
   max-width: 60vw;
   max-height: 60vh;
+  }
+
+  nav {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    bottom: 1em;
+    right: 5%;
+    
+    * {
+      text-decoration: none;
+      color: var(--Alabaster);
+      font-size: 1.5em;
+    }
+
   }
 }
 

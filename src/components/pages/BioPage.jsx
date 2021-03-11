@@ -3,7 +3,8 @@ import ContactElement from '../contact/ContactElement';
 import styles from './BioPage.css';
 import PictureFlip from '../bio/PictureFlip';
 import { useInView } from 'react-intersection-observer';
-import FactDisplay from '../facts/FactDisplay';
+import { Link } from 'react-router-dom';
+
 
 
 const BioPage = () => {
@@ -11,6 +12,10 @@ const BioPage = () => {
     triggerOnce: true,
     threshold: .1,
   });
+
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
 
   return (
     <div className={styles.bioPage} ref={ref} >
@@ -23,15 +28,21 @@ const BioPage = () => {
             </div>
             <PictureFlip />
             <aside>
-              <h3>music</h3>
-              <a 
-                href="https://dinnerforwolves.bandcamp.com/"
-              >Dinner for Wolves
-              </a>
-              <a 
-                href="https://dirtylowdowns.bandcamp.com/"
-              >Dirty Lowdowns
-              </a>
+              <nav className={styles.nav} >
+                <h3>music</h3>
+                <a 
+                  href="https://dinnerforwolves.bandcamp.com/"
+                >Dinner for Wolves
+                </a>
+                <a 
+                  href="https://dirtylowdowns.bandcamp.com/"
+                >Dirty Lowdowns
+                </a>
+              </nav>
+              <nav>
+                <Link to={'/list'}>random facts about me</Link>
+                <div onClick={handleClick}>back to top</div>
+              </nav>
             </aside>
 
           </section>

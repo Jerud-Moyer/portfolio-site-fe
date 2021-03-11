@@ -1,5 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
+import ScrollArrow from '../scroll-arrow/ScrollArrow';
 import TechDisplay from '../tech/TechDisplay';
 import TechOverview from '../tech/TechOverview';
 import styles from './TechPage.css';
@@ -26,6 +27,9 @@ const TechPage = () => {
         </div>
         <div className={inView ? styles.tOverview : styles.invisible}>
           <TechOverview />
+        </div>
+        <div className={styles.arrowBox}>
+          <ScrollArrow />
         </div>
       </div>
       

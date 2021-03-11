@@ -15,6 +15,8 @@
 
 .fact {
   margin: 5em;
+  max-width: 40em;
+  max-height: 40em;
 
   .factLink {
     text-decoration: none;
@@ -33,4 +35,24 @@
     color: var(--Alabaster);
 
   }
+}
+
+.factsHeadline, .scrollTop, .homeLink {
+  color: var(--Alabaster);
+  font-family: 'Montserrat';
+  margin: 2em;
+}
+
+.scrollTop {
+  position: fixed;
+  bottom: 1.5em;
+  left: 85%;
+  cursor: pointer;
+}
+
+.homeLink {
+  text-decoration: none;
+  position: fixed;
+  bottom: 0;
+  left: 85%;
 }

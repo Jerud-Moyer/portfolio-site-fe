@@ -3,21 +3,30 @@ import { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchFact, changeFact } from '../../actions/factsActions';
 import { selectFact } from '../../selectors/factSelectors';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
+import styles from './admin.css';
 
 const UpdateFact = () => {
   const fact = useSelector(selectFact);
   const { id } = useParams();
+  const dispatch = useDispatch();
+  
 
   useEffect(() => {
     dispatch(fetchFact(id));
   }, []);
 
-  const [type, setType] = useState('');
-  const [colorCode, setColorCode] = useState('');
-  const [text, setText] = useState('');
-  const [imageUrl, setImageUrl] = useState('');
-  const dispatch = useDispatch();
+  useEffect(() => {
+    setType(fact.type);
+    setColorCode(fact.colorCode);
+    setText(fact.text);
+    setImageUrl(fact.imageUrl);
+  }, [fact]);
+
+  const [type, setType] = useState(fact.type);
+  const [colorCode, setColorCode] = useState(fact.colorCode);
+  const [text, setText] = useState(fact.text);
+  const [imageUrl, setImageUrl] = useState(fact.imageUrl);
 
   const handleChange = ({ target }) => {
     if(target.name === 'type') setType(target.value);
@@ -38,20 +47,18 @@ const UpdateFact = () => {
     setColorCode('');
     setText('');
     setImageUrl('');
+    
   };
 
 
   return (
-    <div>
+    <div className={styles.updateBox} >
       <h2>update a fact</h2>
-      <h3>type:</h3>
       <h2>{fact.type}</h2>
       <h3>colorCode:</h3>
       <h2>{fact.colorCode}</h2>
-      <h3>text:</h3>
       <h2>{fact.text}</h2>
-      <h3>image url:</h3>
-      <h2>{fact.imageUrl}</h2>
+      <img src={fact.imageUrl} alt={fact.text}/>
       <form onSubmit={handleSubmit}>
         <label htmlFor="fact-type">Fact Type</label>
         <input
@@ -63,6 +70,7 @@ const UpdateFact = () => {
         />
         <label htmlFor="fact-color">Fact Color Code</label>
         <input
+          className={styles[fact.colorCode]}
           placeholder={fact.colorCode}
           id="fact-color"
           name="colorCode"
@@ -87,6 +95,9 @@ const UpdateFact = () => {
         />
         <button>submit</button>
       </form>
+      <Link to={'/admin'}>
+        <button>admin home</button>
+      </Link>
     </div>
   );
 };
