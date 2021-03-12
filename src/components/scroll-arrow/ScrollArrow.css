@@ -25,10 +25,14 @@
 .arrow {
 position: absolute;
 bottom: 0;
-left: 1em;
+left: 0;
 color: var(--Ebony-Dark);
 font-size: 5em;
 animation: bounce 1s ease infinite;
+
+@media screen and (max-width: 414px) {
+  font-size: 3em;
+}
 }
 
 @keyframes bounce {

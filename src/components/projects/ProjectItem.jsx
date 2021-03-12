@@ -6,8 +6,8 @@ import styles from './ProjectItem.css';
 const ProjectItem = ({ name, imgUrl, siteLink, gitLink, description }) => {
 
   const [ref, inView] = useInView({
-    triggerOnce: true,
-    threshold: .3,
+    // triggerOnce: true,
+    threshold: .6,
   });
 
   return (

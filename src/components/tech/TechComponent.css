@@ -23,6 +23,10 @@
 
 .componentBox {
   margin: 3em;
+
+  @media screen and (max-width: 414px) {
+    margin: .5em;
+  }
 }
 
 .techCategory {
@@ -32,6 +36,11 @@
 .tech0, .tech1, .tech2, .tech3 {
   font-family: 'Montserrat';
   color: var(--Ebony-Dark);
+
+  @media screen and (max-width: 414px) {
+    font-size: .75em;
+  }
+
 }
 
 .tech0 {
@@ -52,9 +61,21 @@
 .languagesyes, .frameworksyes, .librariesyes, .testingyes {
   
   animation: slide ease infinite 5s;
+
+  @media screen and (max-width: 781px) {
+    animation: tabletSlide ease infinite 5s;
+  }
+
+  @media screen and (max-width: 414px) {
+    animation: phoneSlide ease infinite 5s;
+  }
   
   li > h1 {
     text-shadow: var(--LightGreen) 1px 1px 1px;
+
+    @media screen and (max-width: 414px) {
+      font-size: 2em;
+    }
   }
 }
 
@@ -64,6 +85,10 @@
 
 .techCategory {
   text-shadow: var(--TerraCotta) 1px 1px 1px;
+
+  @media screen and (max-width: 414px) {
+    font-size: 1.25em;
+  }
   
 }
 
@@ -75,6 +100,10 @@
   align-items: center;
   justify-content: flex-start;
   width: 100vw;
+
+  @media screen  and (max-width: 781px) {
+    margin: 0 80em 0 0;
+  }
 }
 
 .allTech {
@@ -86,6 +115,16 @@
   justify-content: center;
   margin: 0 2em 0 0;
   animation: fadeIn 1s ease;
+
+  @media screen  and (max-width: 781px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: -23em 0 0 0;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin: -10em 3em 0 0;
+  }
   
 }
 
@@ -98,15 +137,38 @@
   text-shadow: var(--Alabaster) 1px 1px 2px;
   margin-bottom: 4em;
 
+  @media screen  and (max-width: 781px) {
+    margin-bottom: 7em;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin-right: .75em;
+  }
+
   p {
-  
     font-size: 3em;
+
+    @media screen and (max-width: 414px) {
+      font-size: 2em;
+    }
+
   }
 
   div {
     font-family: 'Inconsolata';
     font-size: 2em;
     margin: 0 .5em 0 .5em;
+    text-align: center;
+
+    @media screen  and (max-width: 781px) {
+      font-size: 1.75em;
+     
+    }
+
+    @media screen and (max-width: 414px) {
+      font-size: .95em;
+      margin: 0 .25em 0 0;
+    }
   }
 }
 
@@ -118,6 +180,27 @@
   8% {transform: translate(12em, 0);}
   9% {transform: translate(10em, 0);}
   95% {transform: translate(10em, 0);}
+  100% {transform: translate(-50em, 0);}
+}
+
+@keyframes tabletSlide {
+  0% {transform: translate(50em, 0);}
+  5% {transform: translate(5em, 0);}
+  6% {transform: translate(13em, 0);}
+  7% {transform: translate(5em, 0);}
+  8% {transform: translate(12em, 0);}
+  9% {transform: translate(5em, 0);}
+  95% {transform: translate(5em, 0);}
+  100% {transform: translate(-50em, 0);}
+}
+@keyframes phoneSlide {
+  0% {transform: translate(50em, 0);}
+  5% {transform: translate(0, 0);}
+  6% {transform: translate(13em, 0);}
+  7% {transform: translate(0, 0);}
+  8% {transform: translate(12em, 0);}
+  9% {transform: translate(0, 0);}
+  95% {transform: translate(0, 0);}
   100% {transform: translate(-50em, 0);}
 }
 
