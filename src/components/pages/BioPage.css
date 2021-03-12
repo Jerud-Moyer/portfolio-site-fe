@@ -7,6 +7,10 @@
   min-height: 100vh;
   background: var(--CadetBlue);
   margin-top: 0em;
+
+  @media screen and (max-width: 414px) {
+    padding: 0;
+  }
   
 
   article {
@@ -22,8 +26,22 @@
     grid-template-columns: 1fr 4fr 1fr;
     align-items: center;
 
+    @media screen and (max-width: 781px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+
+
     .contact {
       margin-bottom: 11em;
+
+      @media screen and (max-width: 781px) {
+       visibility: hidden;
+       margin-bottom: -10em;
+      }
     }
   }
 
@@ -37,6 +55,16 @@
     margin: 0 0 7em 0;
     padding: 0 1em 0 0;
     animation: fadeIn 2s ease;
+
+    @media screen and (max-width: 414px) {
+      flex-direction: column;
+    }
+    
+    @media screen and (max-width: 781px) {
+      margin-top: 2em;
+      flex-direction: row;
+
+    }
 
     h3 {
       font-family: 'Inconsolata';

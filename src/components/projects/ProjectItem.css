@@ -26,6 +26,12 @@
   flex-direction: column;
   justify-content: center;
   margin: 1.5em;
+
+  @media screen and (max-width: 414px) {
+    margin: 1em 0 1em 0;
+  }
+
+
 }
 
 .name {
@@ -36,6 +42,10 @@
   margin: .5em 0 0 .5em;
   text-decoration: none;
   color: var(--Ebony-Dark);
+
+  @media screen and (max-width: 414px) {
+    margin: .2em 0 .2em 0;
+  }
 } 
 
 .projectItem > a {
@@ -63,6 +73,8 @@
   @media screen  and (max-width: 781px) {
     
   }
+
+
   
 }
 

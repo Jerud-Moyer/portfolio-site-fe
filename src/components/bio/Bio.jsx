@@ -15,7 +15,7 @@ const Bio = () => {
         <h1>A Bit More About Me</h1>
         <div>
           <p>｛</p>
-          <h3>{bio}</h3>
+          <h3 className={styles.bioText} >{bio}</h3>
           <p>｝</p>
         </div>
       </>

@@ -25,21 +25,46 @@
   padding-top: 5vh;
   height: 50vh;
   background: var(--CadetBlue);
+
+  @media screen and (max-width: 414px) {
+    height: 55vh;
+    
+  }
   
   
   div {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     animation: fadeIn 1s ease;
+
+    
 
     p {
       color: var(--Ebony-Dark);
       font-size: 10em;
       margin: 0px 10px 18px 10px;
       animation: fadeIn 1s ease;
+
+      @media screen and (max-width: 414px) {
+        display: none;
+      }
     }
+
+    .bioText {
+      font-family: 'Montserrat';
+      text-align: center;
+      width: 60vw;
+      color: var(--Ebony-Dark);
+      font-size: 1.25em;
+  
+      @media screen and (max-width: 414px) {
+        width: 75vw;
+        font-size: 1em;
+      }
+    }
+
   }
 
   h1 {
@@ -50,13 +75,7 @@
     animation: fadeIn 1s ease;
   }
 
-  h3 {
-    font-family: 'Montserrat';
-    text-align: center;
-    width: 60vw;
-    color: var(--Ebony-Dark);
-    font-size: 1.25em;
-  }
+  
 }
 
 
@@ -73,6 +92,11 @@
   max-height: 30rem;
   animation: fadeIn 1s ease;
   box-shadow: var(--Ebony-Dark) 2px 2px 8px;
+
+  @media screen and (max-width: 414px) {
+    max-width: 20rem;
+    max-height: 20rem;
+  }
 }
 
 
@@ -101,6 +125,11 @@
     padding: 4em 0 0 0;
     background: var(--Opal);
     animation: fadeIn 2s ease;
+
+    @media screen and (max-width: 414px) {
+      width: 23rem;
+      height: 23rem;
+    }
   }
 
   
@@ -123,6 +152,10 @@
     flex-direction: row;
     justify-content: space-between;
 
+    @media screen and (max-width: 414px) {
+      
+    }
+
     div {
       color: var(--Ebony-Dark);
       cursor: pointer;
@@ -130,6 +163,10 @@
       margin: .5em 1em 0 1em;
       transition: .5s ease;
       animation: ebonyFade ease-in-out infinite 1s;
+
+      @media screen and (max-width: 414px) {
+        margin: .5em 0 0 0;
+      }
     }
 
     div:hover {
@@ -144,6 +181,10 @@
       border-radius: 100%;
       margin: 1em .25em .5em .25em;
       transition: .5s ease;
+
+      @media screen and (max-width: 414px) {
+        margin: .5em .15em 0 .15em;
+      }
     }
 
     .indicatorActive {
@@ -156,6 +197,8 @@
       border: solid var(--Opal) 2px;
       border-radius: 100%;
       margin: 1em .25em .5em .25em;
+
+      
     
     }
   }

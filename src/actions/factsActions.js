@@ -34,10 +34,9 @@ export const DELETE_FACT = 'DELETE_FACT';
 
 
 export const fetchFacts = () => dispatch => {
-  dispatch(setLoading(true))
+  dispatch(setLoading(true));
   getFacts()
     .then(facts => {
-      console.log(facts)
       dispatch(setFacts(facts));
     })
     .finally(() => dispatch(setLoading(false)));

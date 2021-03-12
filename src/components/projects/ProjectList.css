@@ -8,6 +8,10 @@
   color: var(--Ebony-Dark);
   text-shadow: var(--Alabaster) 1px 1px 1px;
   animation: fadeIn ease 1s;
+
+  @media screen and (max-width: 414px) {
+    margin-left: 2rem;
+  }
 }
 
 .projectBox {
@@ -18,6 +22,10 @@
 
   @media screen  and (max-width: 781px) {
     height: fit-content;
+  }
+
+  @media screen and (max-width: 414px) {
+    
   }
 }
 
@@ -33,6 +41,11 @@
   @media screen  and (max-width: 781px) {
     flex-direction: column;
   }
+
+  @media screen and (max-width: 414px) {
+    top: 8em;
+    left: 5%;
+  }
   
 }
 
@@ -41,6 +54,11 @@
   bottom: -95em;
   left: -1em;
   margin-bottom: 2em;
+
+  @media screen and (max-width: 414px) {
+    bottom: -71em;
+    left: 20em;
+  }
 }
 
 
