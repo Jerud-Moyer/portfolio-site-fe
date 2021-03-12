@@ -24,4 +24,8 @@
   
   margin-top: 80vh;
   padding-bottom: 5em;
+
+  @media screen  and (max-width: 781px) {
+    height: 180vh;
+  }
 }

@@ -44,10 +44,15 @@
   .techHeadline {
     position: absolute;
     top: 5em;
+    left: center;
     font-family: 'Inconsolata';
     text-shadow: var(--Alabaster) 1px 1px 1px;
     color: var(--Ebony-Dark);
     animation: fadeIn 1s ease;
+
+    @media screen  and (max-width: 781px) {
+      
+    }
   }
 
   .tOverview {
@@ -55,6 +60,10 @@
     bottom: 5em;
     margin-top: 20em;
     animation: fadeIn 1s ease;
+
+    @media screen and (max-width: 414px) {
+      bottom: 3em;
+    }
   }
 
   .midDisplay {
@@ -63,8 +72,13 @@
 
   .arrowBox {
     position: absolute;
-    bottom: 10%;
+    bottom: 6em;
     left: 80%;
+
+    @media screen  and (max-width: 781px) {
+      left: 2em;
+      bottom: 6em;
+    }
   }
 }
 

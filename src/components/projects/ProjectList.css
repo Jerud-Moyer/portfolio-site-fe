@@ -15,6 +15,10 @@
   padding: 2em;
   height: 100vh;
   animation: fadeIn ease 1s;
+
+  @media screen  and (max-width: 781px) {
+    height: fit-content;
+  }
 }
 
 .projectList {
@@ -25,13 +29,17 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
+
+  @media screen  and (max-width: 781px) {
+    flex-direction: column;
+  }
   
 }
 
 .arrowBox {
   position: absolute;
-  bottom: 0;
-  left: 80%;
+  bottom: -95em;
+  left: -1em;
   margin-bottom: 2em;
 }
 
