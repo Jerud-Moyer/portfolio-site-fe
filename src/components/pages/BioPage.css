@@ -11,6 +11,10 @@
   @media screen and (max-width: 414px) {
     padding: 0;
   }
+
+  @media screen and (max-width: 781px) {
+    padding: 3.3em;
+  }
   
 
   article {

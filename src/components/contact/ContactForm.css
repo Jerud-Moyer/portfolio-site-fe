@@ -26,12 +26,22 @@
   justify-content: center;
   z-index: 3;
 
+  @media screen and (max-width: 414px) {
+    width: 80vw;
+  }
+
   h1 {
     position: absolute;
     top: -1em;
     left: .75em;
     font-family: 'Inconsolata';
     color: var(--Ebony-Dark);
+
+    @media screen and (max-width: 414px) {
+      font-size: 1.25em;
+      top: -2em;
+      left: 2.5em;
+    }    
   }
 
   form {
@@ -49,6 +59,10 @@
    box-shadow: var(--Ebony-Dark) 2px 2px 1px 1px;
    height: 4vh;
    width: 25em;
+
+   @media screen and (max-width: 414px) {
+     width: 22em;
+   }
  }
 
  textarea {
@@ -84,6 +98,15 @@
   left: -5em;
   top: -1em;
   cursor: pointer;
+
+  @media screen and (max-width: 414px) {
+    left: 0;
+    top: -5em;
+  }
+
+  @media screen and (max-width: 781px) {
+    left: -3em
+  }
 }
 
 .checkbox {

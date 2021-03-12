@@ -157,6 +157,7 @@
 
   @media screen  and (max-width: 781px) {
     bottom: 10em;
+    left: 2.5em;
   }
 
   @media screen and (max-width: 414px) {
