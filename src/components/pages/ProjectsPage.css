@@ -28,4 +28,8 @@
   @media screen  and (max-width: 781px) {
     height: 180vh;
   }
+
+  @media screen and (max-width: 414px) {
+    height: 190vh;
+  }
 }

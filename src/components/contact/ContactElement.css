@@ -16,6 +16,11 @@
   width: 4em;
   margin: .5em;
   transition: .5s ease-in-out;
+
+  @media screen and (max-width: 414px) {
+    width: 3.5em;
+    margin: .25em;
+  }
 }
 
 .mediaPic:hover {
