@@ -59,6 +59,11 @@
     bottom: -71em;
     left: 20em;
   }
+
+  @media screen and (max-width: 781px) {
+    left: 3em;
+    bottom: -97em;
+  }
 }
 
 

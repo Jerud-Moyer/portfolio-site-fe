@@ -39,7 +39,7 @@ li {
 }
 
 .point0, .point1, .point2, .point3 {
-  font-size: 1.25em;
+  font-size: 1.5em;
 
   @media screen  and (max-width: 414px) {
     font-size: 1em;
@@ -47,7 +47,7 @@ li {
 }
 
 .bulletBox {
-  margin: -3em 0 0 -7em;
+  margin: -3em 0 0 -8.5em;
 
   @media screen and (max-width: 781px) {
     margin: -2em 0 0 -10em;
