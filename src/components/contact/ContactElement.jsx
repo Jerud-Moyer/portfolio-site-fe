@@ -14,7 +14,7 @@ const ContactElement = ({ page }) => {
       <div className={styles.popUpBox} >
         <PopUp image={email} formId={page}/>
       </div>
-      <a href={'/public/jerudresume.pdf'}>
+      <a href={'/assets/jerudresume.pdf'}>
         <img className={styles.mediaPic} src={resume} alt={'PDF'}/>
       </a>
       <a href={'https://twitter.com/Jerud7'}>
