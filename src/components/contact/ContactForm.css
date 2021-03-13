@@ -93,15 +93,15 @@
   position: absolute;
   color: var(--TerraCotta);
   font-family: 'Montserrat';
-  text-shadow: black 1px 1px 1px;
+  text-shadow: var(--Ebony-Dark) 1px 1px 1px;
   font-size: 1em;
   left: -5em;
   top: -1em;
   cursor: pointer;
 
   @media screen and (max-width: 414px) {
-    left: 0;
-    top: -5em;
+    position: relative;
+    margin: -5em 0 0 -10em;
   }
 
   @media screen and (max-width: 781px) {

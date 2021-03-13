@@ -51,8 +51,8 @@
 
 .arrowBox {
   position: absolute;
-  bottom: -95em;
-  left: -1em;
+  bottom: 0em;
+  left: 4em;
   margin-bottom: 2em;
 
   @media screen and (max-width: 414px) {
@@ -61,8 +61,8 @@
   }
 
   @media screen and (max-width: 781px) {
-    left: 3em;
-    bottom: -97em;
+    left: 1em;
+    bottom: -73em;
   }
 }
 
