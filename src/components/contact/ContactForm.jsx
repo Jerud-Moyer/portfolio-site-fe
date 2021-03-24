@@ -5,29 +5,31 @@ import styles from './ContactForm.css';
 
 const ContactForm = ({ formId }) => {
   const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
+  const [senderEmail, setSenderEmail] = useState('');
   const [message, setMessage] = useState('');
   const [messageSent, setMessageSent] = useState(false);
   const flag = 'This message was sent via jerud-moyer.dev';
+  const email = process.env.EMAIL_API;
 
   const handleSubmit = e => {
     e.preventDefault();
     sendMessage({
       name,
       email,
+      senderEmail,
       message,
       flag
     });
 
     setName('');
-    setEmail('');
+    setSenderEmail('');
     setMessage('');
     setMessageSent(true);
   };
 
   const handleChange = ({ target }) => {
     if(target.name === 'name') setName(target.value);
-    if(target.name === 'email') setEmail(target.value);
+    if(target.name === 'email') setSenderEmail(target.value);
     if(target.name === 'message') setMessage(target.value);
   };
 
@@ -63,7 +65,7 @@ const ContactForm = ({ formId }) => {
           type={'text'}
           id={`email${formId}`}
           name={'email'}
-          value={email}
+          value={senderEmail}
           placeholder={'email required'}
           onChange={handleChange}
         />
