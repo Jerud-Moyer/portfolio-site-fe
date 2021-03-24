@@ -57,6 +57,11 @@
   animation-delay: 0s, 1s;
 }
 
+.tech3 {
+  animation: ezFade ease 5s, shine ease-in-out infinite 1.75s;
+  animation-delay: 0s, 1.5s;
+}
+
 
 .languagesyes, .frameworksyes, .librariesyes, .testingyes {
   

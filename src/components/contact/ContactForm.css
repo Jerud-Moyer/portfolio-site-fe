@@ -33,8 +33,9 @@
   h1 {
     position: absolute;
     top: -1em;
-    left: .75em;
+    left: 0;
     font-family: 'Inconsolata';
+    text-align: center;
     color: var(--Ebony-Dark);
 
     @media screen and (max-width: 414px) {
