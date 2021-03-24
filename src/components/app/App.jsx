@@ -5,7 +5,6 @@ import {
   Switch
 } from 'react-router-dom';
 import FactDetail from '../facts/FactDetail';
-import FactList from '../facts/FactList';
 import AdminPage from '../admin/AdminPage';
 import styles from './app.css';
 import UpdateFact from '../admin/UpdateFact';
