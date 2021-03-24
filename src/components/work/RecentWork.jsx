@@ -34,7 +34,7 @@ const RecentWork = () => {
               className={inView ? styles.workPic : styles.hidden}
               src={amphead.imgUrl}/>
             <p className={styles.workDescription}>{amphead.description}</p>
-            <a href={amphead.siteLink}>visit amphead.com</a>
+            <a href={amphead.siteLink}>visit the site</a>
             <a href={amphead.gitLink}>git repo</a>
           </div>
         </div>
