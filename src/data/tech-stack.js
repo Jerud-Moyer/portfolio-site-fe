@@ -1,7 +1,7 @@
 export const tech = [
   {
     name: 'languages',
-    items: ['JavaScript', 'CSS', 'HTML']
+    items: ['JavaScript', 'TypeScript', 'CSS', 'HTML']
   },
   {
     name: 'frameworks',
