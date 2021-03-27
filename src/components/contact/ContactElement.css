@@ -4,12 +4,10 @@
   flex-direction: column;
   width: 100px;
   margin-top: 3em;
-  animation: fadeIn ease 8s;
+  animation: fadeIn ease 3.5s;
   
   
 }
-
-
 
 .mediaPic {
   position: relative;
@@ -31,8 +29,6 @@
   position: relative;
   display: block;
 }
-
-
 
 
 @keyframes fadeIn {

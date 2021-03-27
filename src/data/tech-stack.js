@@ -4,16 +4,16 @@ export const tech = [
     items: ['JavaScript', 'TypeScript', 'CSS', 'HTML']
   },
   {
-    name: 'frameworks',
-    items: ['React', 'NodeJS', 'PostgreSQL']
+    name: 'frameworks \n& libraries',
+    items: ['React', 'Redux', 'NodeJS', 'Express']
   },
   {
-    name: 'libraries',
-    items: ['Redux', 'Express', 'BCrypt']
+    name: 'DB & \ndev⎯tools',
+    items: ['PostgreSQL', 'Git', 'Heroku', 'Netlify']
   },
   {
-    name: 'testing',
-    items: ['Jest', 'Qunit', 'SuperTest']
+    name: 'testing & auth',
+    items: ['Jest', 'Qunit', 'SuperTest', 'BCrypt']
   },
 
 ];
