@@ -11,7 +11,7 @@ const HomePage = () => {
     <div className={styles.homePage} >
       <div className={styles.topBox}>
         <div className={styles.infoBox}>
-          <h1 className={styles.headline} >Jerud Moyer -Dev</h1>
+          <h1 className={styles.headline} >Jerud Moyer</h1>
           <BulletPointElement />
         </div>
         <ContactElement page={'home-page'}/>

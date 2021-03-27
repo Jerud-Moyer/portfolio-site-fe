@@ -26,7 +26,7 @@ const TechComponent = ({ techType, isAnimated }) => {
     <div ref={ref} className={styles.componentBox} >
       {inView &&
       <ul
-        className={inView ? styles[`${type}${isAnimated}`]
+        className={inView ? styles[`animatedTechType${isAnimated}`]
           : styles.invisible} >
         <li>
           <h1 className={styles.techCategory}>

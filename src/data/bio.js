@@ -1,5 +1,5 @@
 /* eslint-disable max-len */
-export const bio = 'I am a Full-Stack software developer living in Portland, OR.  I love creating things with code from end to end.  My starter career was as a bartender and from there I moved into small business ownership. I have always had a focus on customer service and delivering for the the client.  I\'m an artist and a musician and really enjoy bringing that type creative energy to tech.  I love to spend my spare time with my family, whether that be at home or out in the beauty of Oregon.';
+export const bio = 'I am a Full-Stack software developer living in Portland, OR.  I love creating things with code from end to end.  My starter career was bartending and from there I moved into small business ownership. I have always had a focus on customer service and delivering for the the client.  I\'m an artist and a musician and really enjoy bringing that type of creative energy to tech.  I love to spend my spare time with my family, whether that be at home or out in the beauty of Oregon.';
 
 
 export const bioPics = [
