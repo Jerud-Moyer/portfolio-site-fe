@@ -13,11 +13,11 @@ export const bioPics = [
   },
   {
     imageUrl: 'https://i.imgur.com/ZhQqeaw.jpg',
-    caption: 'with the band'
+    caption: 'With the band'
   },
   {
     imageUrl: 'https://i.imgur.com/0IM2Cd9.jpg', 
-    caption: 'annual Christamas tree adventure!'
+    caption: 'Annual Christamas tree adventure!'
   },
   {
     imageUrl: 'https://i.imgur.com/3sHLKqQ.jpg', 
@@ -25,7 +25,7 @@ export const bioPics = [
   },
   {
     imageUrl: 'https://i.imgur.com/RjEItAx.jpg', 
-    caption: 'a sign from our old coffee shop'
+    caption: 'A sign from our old coffee shop'
   },
   {
     imageUrl: 'https://i.imgur.com/3VwTLLY.jpg', 
@@ -33,7 +33,7 @@ export const bioPics = [
   },
   {
     imageUrl: 'https://i.imgur.com/4OX31AQ.jpg', 
-    caption: 'someone young, someone old'
+    caption: 'Someone young, someone old'
   },
   {
     imageUrl: 'https://i.imgur.com/5g6IEvI.jpg', 
@@ -41,35 +41,35 @@ export const bioPics = [
   },
   {
     imageUrl: 'https://i.imgur.com/fmba3cj.jpg', 
-    caption: 'in the studio'
+    caption: 'In the studio'
   },
   {
     imageUrl: 'https://i.imgur.com/eVMetKy.jpg', 
-    caption: 'rockin\' live'
+    caption: 'Rockin\' live'
   },
   {
     imageUrl: 'https://i.imgur.com/3HKETkt.jpg', 
-    caption: 'quite a pair at the pumpkin patch'
+    caption: 'Quite a pair at the pumpkin patch'
   },
   {
     imageUrl: 'https://i.imgur.com/meoqgBl.jpg', 
-    caption: 'he stole my wheels!'
+    caption: 'He stole my wheels!'
   },
   {
     imageUrl: 'https://i.imgur.com/XLHAfFW.jpg', 
-    caption: 'tooting his own horn'
+    caption: 'Tooting his own horn'
   },
   {
     imageUrl: 'https://i.imgur.com/0LXutrQ.jpg', 
-    caption: 'proud papa'
+    caption: 'Proud Papa'
   },
   {
     imageUrl: 'https://i.imgur.com/Je5voJ0.jpg', 
-    caption: 'more vacay fun!'
+    caption: 'More vacay fun!'
   },
   {
     imageUrl: 'https://i.imgur.com/z3dvT2j.jpg', 
-    caption: 'daaaaaaw'
+    caption: 'D\'aaaaaaw'
   },
 
 ];
