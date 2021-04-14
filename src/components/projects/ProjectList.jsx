@@ -1,11 +1,12 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import ProjectItem from './ProjectItem';
-import { projects } from '../../data/projects.js';
-import styles from './ProjectList.css';
+// import { projects } from '../../data/projects.js';
 import ScrollArrow from '../scroll-arrow/ScrollArrow';
+import PropTypes from 'prop-types';
+import styles from './ProjectList.css';
 
-const ProjectList = () => {
+const ProjectList = ({ projects, forHomePage }) => {
   
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -28,23 +29,32 @@ const ProjectList = () => {
       }}
     >
       
-      <>
-        <h1 className={inView 
-          ? styles.headline 
-          : styles.invisible }
-        >Projects
-        </h1>
+      <div className={styles.listBox}>
+        {forHomePage &&
+          <h1 className={inView 
+            ? styles.headline 
+            : styles.invisible }
+          >Projects
+          </h1>
+        }
         <ul className={styles.projectList} >
           {projectElements}
         </ul>
+        {forHomePage &&
         <div className={styles.arrowBox}>
           <ScrollArrow />
         </div>
-      </>
+        }
+      </div>
       
       
     </div>
   );
+};
+
+ProjectList.propTypes = {
+  projects: PropTypes.Array,
+  forHomePage: PropTypes.bool
 };
 
 export default ProjectList;

@@ -23,3 +23,14 @@ export const projects = [
   }
 
 ];
+
+export const moreProjects = [
+  {
+    name: 'TrekDex',
+    imgUrl: '/assets/trekdex.png',
+    siteLink: 'https://trekdex.netlify.app/',
+    gitLink: 'https://github.com/Jerud-Moyer/trek-dex',
+    description: 'A simple full-stack CRUD app with a React/TypeScript front-end.'
+  },
+];
+
