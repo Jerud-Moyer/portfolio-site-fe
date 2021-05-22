@@ -2,6 +2,10 @@
   visibility: hidden;
 }
 
+.listBox {
+  position: relative;
+}
+
 .headline {
   margin-left: 8em;
   font-family: 'Inconsolata';
@@ -30,9 +34,7 @@
 }
 
 .projectList {
-  position: absolute;
-  left: 15%;
-  top: 12em;
+  margin-top: 7em;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -51,8 +53,8 @@
 
 .arrowBox {
   position: absolute;
-  bottom: 0em;
-  left: 4em;
+  top: 41em;
+  left: 87%;
   margin-bottom: 2em;
 
   @media screen and (max-width: 414px) {
@@ -61,8 +63,8 @@
   }
 
   @media screen and (max-width: 781px) {
-    left: 1em;
-    bottom: -73em;
+   right: 1em;
+    bottom: -84em;
   }
 }
 

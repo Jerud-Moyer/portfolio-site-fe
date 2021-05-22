@@ -9,7 +9,11 @@ const Bio = () => {
   });
 
   return (
-    <div className={styles.bio} ref={ref} >
+    <div 
+      className={styles.bio} 
+      id={'about'} 
+      ref={ref} 
+    >
       {(inView) &&
       <>
         <h1>A Bit More About Me</h1>

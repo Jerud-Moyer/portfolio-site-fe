@@ -11,6 +11,7 @@ import UpdateFact from '../admin/UpdateFact';
 import CreateFact from '../admin/CreateFact';
 import Portfolio from '../portfolio/Portfolio';
 import FactListPage from '../pages/FactListPage';
+import MoreProjectsPage from '../pages/MoreProjectsPage';
 
 
 export default function App() {
@@ -23,6 +24,7 @@ export default function App() {
           <Route exact path="/detail/:id" component={FactDetail} />
           <Route exact path="/admin" component={AdminPage} />
           <Route exact path="/UpdateFact/:id" component={UpdateFact} />
+          <Route exact path="/moreProjects" component={MoreProjectsPage} />
           <Route exact path="/Create" component={CreateFact} />
         </Switch>
       </Router>

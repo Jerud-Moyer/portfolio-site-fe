@@ -5,9 +5,8 @@ import styles from './WorkPage.css';
 
 const WorkPage = () => {
   return (
-    <div className={styles.workPageBox} >
+    <div className={styles.workPageBox} id={'freelance'}>
       <RecentWork />
-      
     </div>
   );
 };

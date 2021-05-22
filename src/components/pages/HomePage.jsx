@@ -8,7 +8,10 @@ import ScrollArrow from '../scroll-arrow/ScrollArrow';
 
 const HomePage = () => {
   return (
-    <div className={styles.homePage} >
+    <div 
+      className={styles.homePage} 
+      id={'home'}
+    >
       <div className={styles.topBox}>
         <div className={styles.infoBox}>
           <h1 className={styles.headline} >Jerud Moyer</h1>

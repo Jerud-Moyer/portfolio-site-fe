@@ -1,4 +1,5 @@
 import React from 'react';
+import NavBar from '../navbar/NavBar';
 import SectionFive from '../sections/SectionFive';
 import SectionFour from '../sections/SectionFour';
 import SectionOne from '../sections/SectionOne';
@@ -11,7 +12,8 @@ import styles from './Portfolio.css';
 const Portfolio = () => {
   return (
     <div className={styles.portfolio} >
-      <SectionZero />      
+      <nav><NavBar /></nav>
+      <SectionZero />
       <SectionOne />
       <SectionTwo />
       <SectionThree />

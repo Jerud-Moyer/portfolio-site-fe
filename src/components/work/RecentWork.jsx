@@ -21,7 +21,7 @@ const RecentWork = () => {
       <>
         <h1
           className={styles.proHeadline} 
-        >Professional Work
+        >Freelance Work
         </h1>
         <div className={styles.workBox}>
       
