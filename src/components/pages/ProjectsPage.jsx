@@ -5,7 +5,7 @@ import styles from './ProjectsPage.css';
 
 const ProjectsPage = () => {
   return (
-    <div className={styles.projectsPage} >
+    <div className={styles.projectsPage} id={'projects'}>
       <ProjectList projects={projects} forHomePage/>
     </div>
   );

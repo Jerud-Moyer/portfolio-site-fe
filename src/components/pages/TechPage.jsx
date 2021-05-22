@@ -13,8 +13,11 @@ const TechPage = () => {
 
   return (
        
-    <div className={styles.techPage} ref={ref} >
-      
+    <div 
+      className={styles.techPage}
+      id={'tech'} 
+      ref={ref} 
+    >
       <div className={styles.techPageInner} >
         <h1 
           className={inView 
@@ -22,13 +25,20 @@ const TechPage = () => {
             : styles.invisible}
         >Tech-Stack
         </h1>
-        <div className={inView ? styles.midDisplay : styles.invisible}>
+        <div 
+          className={inView 
+            ? styles.midDisplay 
+            : styles.invisible}>
           <TechDisplay />
         </div>
-        <div className={inView ? styles.tOverview : styles.invisible}>
+        <div 
+          className={inView 
+            ? styles.tOverview 
+            : styles.invisible}>
           <TechOverview />
         </div>
-        <div className={styles.arrowBox}>
+        <div 
+          className={styles.arrowBox}>
           <ScrollArrow />
         </div>
       </div>

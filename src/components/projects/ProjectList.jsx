@@ -1,7 +1,6 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer';
 import ProjectItem from './ProjectItem';
-// import { projects } from '../../data/projects.js';
 import ScrollArrow from '../scroll-arrow/ScrollArrow';
 import PropTypes from 'prop-types';
 import styles from './ProjectList.css';

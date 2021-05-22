@@ -18,7 +18,11 @@ const BioPage = () => {
   };
 
   return (
-    <div className={styles.bioPage} ref={ref} >
+    <div 
+      className={styles.bioPage}
+      ref={ref} 
+    >
+      
       {(inView) && 
         <>
           
