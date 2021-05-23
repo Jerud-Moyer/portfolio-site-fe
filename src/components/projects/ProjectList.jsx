@@ -52,7 +52,7 @@ const ProjectList = ({ projects, forHomePage }) => {
 };
 
 ProjectList.propTypes = {
-  projects: PropTypes.Array,
+  projects: PropTypes.array,
   forHomePage: PropTypes.bool
 };
 
