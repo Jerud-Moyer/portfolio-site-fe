@@ -8,5 +8,6 @@
   position: relative;
   display: block;
   overflow: hidden;
-
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }

@@ -17,12 +17,7 @@
   --Alabaster: #E6EBE0;
 }
 
-
-
-.navBar {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.navBarOuter {
   position: fixed;
   top: 0;
   left: 0;
@@ -30,13 +25,93 @@
   background: var(--Ebony-Dark);
   width: 100vw;
   height: 3.5vh;
+}
+
+.navBar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
 
   a {
     text-decoration: none;
     font-family: 'Montserrat';
     color: var(--Opal);
-    margin: .5em 2em .5em 2em;
+    margin: .2em 2em .5em 2em;
+  }
+
+  @media screen and (max-width: 414px) {
+    visibility: hidden;
   }
 }
 
+.mobileNav {
 
+  
+  @media screen and (min-width: 414px) {
+    visibility: hidden;
+
+
+  }
+  
+  .mobileNavInner {
+    width: 70vw;
+    height: 70vh;
+    position: fixed;
+    left: 3em;
+    background: var(--CadetBlue);
+    border: var(--Ebony-Dark) solid 2px;
+    box-shadow: inset var(--Ebony-Dark) 2px 2px 5px 1px;
+    border-radius: 10px;
+    animation: grow .7s ease-in-out;
+
+    .xBox {
+      position: absolute;
+      top: 0;
+      left: 1em;
+      font-family: 'Montserrat';
+      font-size: 1em;
+      color: var(--TerraCotta);
+      text-shadow: var(--Ebony-Dark) 2px 2px 2px;
+    }
+  
+  
+    nav {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding-top: 4.5em;
+    }
+    
+       a {
+        text-decoration: none;
+        font-family: 'Montserrat';
+        color: var(--Ebony-Dark);
+         margin: 1em 2em 1em 2em;
+       }
+
+  }  
+  
+}
+
+.hamburger {
+  position: absolute;
+  top: -10px;
+  left: 5px;
+  font-family: 'Montserrat';
+  color: var(--Opal);
+  font-size: 2em;
+}
+
+
+@keyframes grow  {
+  from {opacity: 0; transform: scale(0);}
+  to {opacity: 1; transform: scale(1);}
+}
+
+@keyframes shrink {
+  from {opacity: 1; transform: scale(1);}
+  to {opacity: 0; transform: scale(0);}
+}
