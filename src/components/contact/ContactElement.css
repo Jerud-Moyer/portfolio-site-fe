@@ -32,7 +32,7 @@
 
   @media screen and (max-width: 414px) {
     width: 3.5em;
-    margin: .25em;
+    margin: .25em 1.5em .25em .25em;
   }
 }
 
@@ -50,6 +50,10 @@
 
 .popUpInner {
   margin-left: 2.35em;
+
+  @media screen and (max-width: 414px) {
+    margin: 0 1.25em .5em 0;
+  }
 }
 
 .elementTag {
@@ -61,6 +65,10 @@
   color: var(--CadetBlue);
   opacity: 0;
   animation: sparkleAndFade 1s ease-in-out;
+
+  @media screen and (max-width: 414px) {
+    display: none;
+  }
 }
 
 .invisible {
