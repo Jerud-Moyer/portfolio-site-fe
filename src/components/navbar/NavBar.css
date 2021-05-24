@@ -25,6 +25,10 @@
   background: var(--Ebony-Dark);
   width: 100vw;
   height: 3.5vh;
+
+  @media screen and (max-width: 414px) {
+    height: 5vh;
+  }
 }
 
 .navBar {
@@ -59,6 +63,7 @@
     height: 70vh;
     position: fixed;
     left: 3em;
+    z-index: 200;
     background: var(--CadetBlue);
     border: var(--Ebony-Dark) solid 2px;
     box-shadow: inset var(--Ebony-Dark) 2px 2px 5px 1px;
@@ -102,7 +107,7 @@
   left: 5px;
   font-family: 'Montserrat';
   color: var(--Opal);
-  font-size: 2em;
+  font-size: 2.5em;
 }
 
 
