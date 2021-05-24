@@ -1,3 +1,18 @@
+:root {
+  --AeroBlue: #D6F9DD;
+  --LightGreen: #99F7AB;
+  --YellowGreenCrayola: #ABDF75;
+  --Ebony: #60695C;
+  --Ebony-Dark: #373b34;
+  --SilverSand: #C5D6D8;
+  --OrchidCrayola: #FFB2E6;
+  --TerraCotta: #ED6A5A;
+  --PaleSpringBud: #F4F1BB;
+  --Opal: #9BC1BC;
+  --CadetBlue: #5CA4A9;
+  --Alabaster: #E6EBE0;
+}
+
 .contactBox {
   position: relative;
   display: flex;
@@ -25,11 +40,35 @@
   transform: scale(1.5);
 }
 
-.popUpBox {
+.elementBox {
   position: relative;
-  display: block;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  
 }
 
+.popUpInner {
+  margin-left: 2.35em;
+}
+
+.elementTag {
+  text-align: right;
+  width: 8rem;
+  position: absolute;
+  right: 6.5em;
+  font-family: 'Montserrat';
+  color: var(--CadetBlue);
+  opacity: 0;
+  animation: sparkleAndFade 1s ease-in-out;
+}
+
+.invisible {
+  width: 8rem;
+  position: absolute;
+  right: 6.5em;
+  opacity: 0;
+}
 
 @keyframes fadeIn {
   from {opacity: 0}
@@ -39,4 +78,12 @@
 @keyframes grow {
   from {transform: scale(1)}
   to {transform: scale(1.5)}
+}
+
+@keyframes sparkleAndFade {
+  0% {opacity: 0;}
+  20% {opacity: 1; color: var(--CadetBlue);}
+  50% {transform: scale(1.15); color: var(--Opal);}
+  80% {opacity: 1; color: var(--CadetBlue);}
+  100% {opacity: 0; transform: scale(1);}
 }
