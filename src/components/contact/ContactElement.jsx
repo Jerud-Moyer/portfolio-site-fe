@@ -23,7 +23,7 @@ const ContactElement = ({ page }) => {
       <div className={styles.elementBox} >
         {page === 'home-page' &&
           <p 
-            className={trigger === 1 
+            className={trigger === 2 
               ? styles.elementTag 
               : styles.invisible} 
           > {'contact me =>'}
@@ -37,7 +37,7 @@ const ContactElement = ({ page }) => {
       <div className={styles.elementBox} >
         {page === 'home-page' &&
             <p 
-              className={trigger === 2
+              className={trigger === 3
                 ? styles.elementTag
                 : styles.invisible} 
             >{'my resume =>'}
@@ -51,7 +51,7 @@ const ContactElement = ({ page }) => {
       <div className={styles.elementBox}>
         {page === 'home-page' &&
             <p 
-              className={trigger === 3 
+              className={trigger === 4 
                 ? styles.elementTag
                 : styles.invisible} 
             >{'Twitter =>'}
@@ -65,7 +65,7 @@ const ContactElement = ({ page }) => {
       <div className={styles.elementBox}>
         {page === 'home-page' &&
             <p 
-              className={trigger === 4
+              className={trigger === 5
                 ? styles.elementTag
                 : styles.invisible} 
             >{'LinkedIn =>'}
@@ -79,7 +79,7 @@ const ContactElement = ({ page }) => {
       <div className={styles.elementBox}>
         {page === 'home-page' &&
             <p 
-              className={trigger === 5
+              className={trigger === 6
                 ? styles.elementTag
                 : styles.invisible} 
             >{'Github =>'}
