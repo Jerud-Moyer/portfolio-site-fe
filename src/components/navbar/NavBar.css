@@ -62,8 +62,9 @@
     width: 70vw;
     height: 70vh;
     position: fixed;
+    top: 6rem;
     left: 3em;
-    z-index: 200;
+    z-index: 5;
     background: var(--CadetBlue);
     border: var(--Ebony-Dark) solid 2px;
     box-shadow: inset var(--Ebony-Dark) 2px 2px 5px 1px;

@@ -1,13 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 import { proProjects } from '../../data/proProjects';
+import { useInterval } from '../../hooks/hooks';
 import ScrollArrow from '../scroll-arrow/ScrollArrow';
 import styles from './RecentWork.css';
 
 
 const RecentWork = () => {
+  const [trigger, setTrigger] = useState(0);
   const amphead = proProjects[0];
 
+  
+  
+  useInterval(() => {
+    (trigger <= 6 && inView)
+      ? setTrigger(trigger + 1)
+      : setTrigger(0);
+  }, 1500);
+   
+  
+  
   const [ref, inView] = useInView({
     threshold: .3,
   });
@@ -23,6 +35,33 @@ const RecentWork = () => {
           className={styles.proHeadline} 
         >Freelance Work
         </h1>
+        <div className={styles.services}>
+          <h3 className={trigger === 3
+            ? styles.bulletPoint
+            : styles.invisible}
+          >if you want to . . .
+          </h3>
+          <h4 className={trigger === 4
+            ? styles.bulletPoint
+            : styles.invisible}
+          >expand your digital brand,
+          </h4>
+          <h4 className={trigger === 5
+            ? styles.bulletPoint
+            : styles.invisible}
+          >manage your data,
+          </h4>
+          <h4 className={trigger === 6
+            ? styles.bulletPoint
+            : styles.invisible}
+          >or build a cool app,
+          </h4>
+          <h3 className={trigger === 7
+            ? styles.bulletPoint
+            : styles.invisible}
+          >. . . I can help.
+          </h3>
+        </div>
         <div className={styles.workBox}>
       
           <h1
