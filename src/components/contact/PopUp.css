@@ -20,10 +20,12 @@
 .label {
   display: block;
   position: relative;
+  z-index: 0;
 }
 
 .pic {
   position: relative;
+  z-index: 0;
   display: flex;
   width: 4em;
   margin: 1em 3em .6em .47em;
