@@ -49,8 +49,9 @@
 } 
 
 .projectItem > a {
-  animation: ebonyFade ease infinite 3s;
+  animation: ebonyFade ease infinite 1s;
   transition: ease .5s;
+  
 }
 
 .projectItem > a:hover {
@@ -58,8 +59,12 @@
   color: var(--TerraCotta);
 }
 
-.projectPic {
+.mobileProjectPic {
+  max-width: 10em;
+  animation: jump ease .75s;
+}
 
+.projectPic {
   width: 12em;
 }
 
@@ -68,20 +73,27 @@
   border: solid black 1px;
   border-radius: 5px;
   box-shadow: var(--Ebony) 3px 3px 5px;
-  animation: jump ease 1s;
+  animation: jump ease .75s;
 
   @media screen  and (max-width: 781px) {
     
   }
-
-
-  
 }
 
+.projectPicOuter {
+  width: 16em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+}
+
+.downloadLink {
+  width: 12em;
+}
 
 .description {
-  width: 10em;
+  width: 12em;
 }
 
 @keyframes ebonyFade {

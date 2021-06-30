@@ -9,8 +9,6 @@ const TechComponent = ({ techType, isAnimated }) => {
     triggerOnce: true,
     threshold: .3,
   });
-
-  const type = techType.name;
  
   const techItems = techType.items.map((item, index) => (
     <li

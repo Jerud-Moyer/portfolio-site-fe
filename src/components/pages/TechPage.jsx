@@ -12,13 +12,13 @@ const TechPage = () => {
   
 
   return (
-       
+    
     <div 
       className={styles.techPage}
       id={'tech'} 
-      ref={ref} 
+      ref={ref}
     >
-      <div className={styles.techPageInner} >
+      <div className={styles.techPageInner}  >
         <h1 
           className={inView 
             ? styles.techHeadline 
@@ -44,7 +44,7 @@ const TechPage = () => {
       </div>
       
     </div>
-          
+     
   );
 };
 

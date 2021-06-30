@@ -15,7 +15,7 @@ const FactDisplay = () => {
     const randomIndexNum = Math.floor(Math.random() * facts.length);
     setRandomFact(facts[randomIndexNum]);
   }, 5000);
-
+  
   
   useEffect(() => {
     dispatch(fetchFacts());

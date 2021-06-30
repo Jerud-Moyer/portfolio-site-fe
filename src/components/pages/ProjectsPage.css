@@ -21,9 +21,8 @@
   min-height: 100vh;
   width: 100vw;
   background-color: var(--Opal);
-  
   margin-top: 80vh;
-  padding-bottom: 5em;
+  padding-bottom: 15em;
 
   @media screen  and (max-width: 781px) {
     height: 180vh;
@@ -32,4 +31,10 @@
   @media screen and (max-width: 414px) {
     height: 190vh;
   }
+}
+
+.arrowBox {
+  position: absolute;
+  right: 13%;
+  bottom: 10em;
 }

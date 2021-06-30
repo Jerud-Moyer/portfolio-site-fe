@@ -5,7 +5,7 @@ import ScrollArrow from '../scroll-arrow/ScrollArrow';
 import PropTypes from 'prop-types';
 import styles from './ProjectList.css';
 
-const ProjectList = ({ projects, forHomePage }) => {
+const ProjectList = ({ projects, forHomePage, mobile }) => {
   
   const [ref, inView] = useInView({
     triggerOnce: true,
@@ -27,7 +27,7 @@ const ProjectList = ({ projects, forHomePage }) => {
         visibility: inView ? 'visible' : 'hidden'
       }}
     >
-      
+
       <div className={styles.listBox}>
         {forHomePage &&
           <h1 className={inView 
@@ -36,9 +36,19 @@ const ProjectList = ({ projects, forHomePage }) => {
           >Projects
           </h1>
         }
+
+        {mobile &&
+          <h1 className={inView 
+            ? styles.headline 
+            : styles.invisible }
+          >Mobile Projects
+          </h1>
+        }
+
         <ul className={styles.projectList} >
           {projectElements}
         </ul>
+        
         {forHomePage &&
         <div className={styles.arrowBox}>
           <ScrollArrow />
@@ -47,13 +57,15 @@ const ProjectList = ({ projects, forHomePage }) => {
       </div>
       
       
+      
     </div>
   );
 };
 
 ProjectList.propTypes = {
   projects: PropTypes.array,
-  forHomePage: PropTypes.bool
+  forHomePage: PropTypes.bool,
+  mobile: PropTypes.bool
 };
 
 export default ProjectList;
