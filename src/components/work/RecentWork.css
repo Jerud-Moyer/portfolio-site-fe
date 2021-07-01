@@ -41,8 +41,8 @@
 .bigBox {
  position: relative;
  margin: 0 0 0 0;
- padding-bottom: 5em;
- min-height: 110vh;
+ padding-bottom: 10em;
+ min-height: 150vh;
 
  width: 100vw;
  overflow: hidden;
@@ -55,14 +55,23 @@
   }
 }
 
-
-
 .subHeadline {
   margin: 6em 0 0 10em;
   font-family: 'Inconsolata';
   color: var(--Ebony-Dark);
   animation: fadeIn ease 5s;
+  
+  @media screen and (max-width: 414px) {
+    margin: 2em 0 0 -2em;
+  }
+}
 
+.subHeadline2 {
+  margin: 6em 0 0 4em;
+  font-family: 'Inconsolata';
+  color: var(--Ebony-Dark);
+  animation: fadeIn ease 5s;
+  
   @media screen and (max-width: 414px) {
     margin: 2em 0 0 -2em;
   }
@@ -114,7 +123,29 @@
   position: relative;
   display: flex;
   flex-direction: row;
-  margin: 3vh 0 5vh 0;
+  margin: 5em 0 0 5em;
+  padding: 5vh 5vw 5vh 5vw;
+  animation: fadeIn ease 5s;
+
+  @media screen  and (max-width: 781px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  @media screen and (max-width: 414px) {
+    margin: 8em 0 5em 0;
+    padding: 0 0 5em 0;
+  }
+}
+
+.workBox2 {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  margin: -10em 0 0 5em;
   padding: 5vh 5vw 5vh 5vw;
   animation: fadeIn ease 5s;
 
@@ -197,7 +228,7 @@
 
 .arrowBox {
   position: absolute;
-  bottom: 14em;
+  bottom: 10em;
   left: 5em;
 
   @media screen  and (max-width: 781px) {

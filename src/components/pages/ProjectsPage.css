@@ -22,7 +22,7 @@
   width: 100vw;
   background-color: var(--Opal);
   margin-top: 80vh;
-  padding-bottom: 15em;
+  padding-bottom: 8em;
 
   @media screen  and (max-width: 781px) {
     height: 180vh;
@@ -32,6 +32,10 @@
     min-height: 320vh;
     padding-bottom: 50em;
   }
+}
+
+.listBox1 {
+  margin: 0 0 -12em 0;
 }
 
 .arrowBox {
