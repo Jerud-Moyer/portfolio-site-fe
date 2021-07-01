@@ -59,7 +59,7 @@ export const mobileProjects = [
     siteLink: '',
     downloadLink: '/assets/nerdmeme-1-2.apk',
     gitLink: 'https://github.com/Meme-Nerds',
-    description: 'A ramdom meme generator.',
+    description: 'A random meme generator.',
     mobile: true
   }
 ];
