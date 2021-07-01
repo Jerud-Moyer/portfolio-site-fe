@@ -57,7 +57,7 @@ export const mobileProjects = [
     name: 'nerdMeme',
     imgUrl: '/assets/nerdMemePic.png',
     siteLink: '',
-    downloadLink: '/assets/nerdmeme-604fa7a28e434ef0a26d251bf4975413-signed.apk',
+    downloadLink: '/assets/nerdmeme-1-2.apk',
     gitLink: 'https://github.com/Meme-Nerds',
     description: 'A ramdom meme generator.',
     mobile: true
