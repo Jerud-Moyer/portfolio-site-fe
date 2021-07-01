@@ -36,27 +36,27 @@ const RecentWork = () => {
         >Freelance Work
         </h1>
         <div className={styles.services}>
-          <h3 className={trigger === 3
+          <h3 className={trigger === 2
             ? styles.bulletPoint
             : styles.invisible}
           >if you want to . . .
           </h3>
-          <h4 className={trigger === 4
+          <h4 className={trigger === 3
             ? styles.bulletPoint
             : styles.invisible}
           >expand your digital brand,
           </h4>
-          <h4 className={trigger === 5
+          <h4 className={trigger === 4
             ? styles.bulletPoint
             : styles.invisible}
           >manage your data,
           </h4>
-          <h4 className={trigger === 6
+          <h4 className={trigger === 5
             ? styles.bulletPoint
             : styles.invisible}
           >or build a cool app,
           </h4>
-          <h3 className={trigger === 7
+          <h3 className={trigger === 6
             ? styles.bulletPoint
             : styles.invisible}
           >. . . I can help.
