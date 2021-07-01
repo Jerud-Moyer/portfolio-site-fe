@@ -9,7 +9,7 @@ import styles from './RecentWork.css';
 const RecentWork = () => {
   const [trigger, setTrigger] = useState(0);
   const amphead = proProjects[0];
-
+  const albano = proProjects[1];
   
   
   useInterval(() => {
@@ -63,7 +63,6 @@ const RecentWork = () => {
           </h3>
         </div>
         <div className={styles.workBox}>
-      
           <h1
             className={styles.subHeadline}
           >{amphead.name}
@@ -76,6 +75,20 @@ const RecentWork = () => {
             <a href={amphead.siteLink}>visit the site</a>
             <a href={amphead.gitLink}>git repo</a>
           </div>
+        </div>
+        <div className={styles.workBox2}>
+          <div className={styles.picBox}>
+            <img
+              className={inView ? styles.workPic : styles.hidden}
+              src={albano.imgUrl}/>
+            <p className={styles.workDescription}>{albano.description}</p>
+            <a href={albano.siteLink}>visit the site</a>
+            <a href={albano.gitLink}>git repo</a>
+          </div>
+          <h1
+            className={styles.subHeadline2}
+          >{albano.name}
+          </h1>
         </div>
         <div className={styles.arrowBox}>
           <ScrollArrow />

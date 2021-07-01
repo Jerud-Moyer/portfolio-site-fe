@@ -10,8 +10,12 @@ const ProjectsPage = () => {
       className={styles.projectsPage} 
       id={'projects'}
     >
-      <ProjectList projects={projects} forHomePage/>
-      <ProjectList projects={mobileProjects} mobile/>
+      <div className={styles.listBox1}>
+        <ProjectList projects={projects} forHomePage/>
+      </div>
+      <div className={styles.listBox2}>
+        <ProjectList projects={mobileProjects} mobile/>
+      </div>
       <div className={styles.arrowBox}>
         <ScrollArrow />
       </div>
