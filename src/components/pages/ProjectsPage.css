@@ -29,7 +29,8 @@
   }
 
   @media screen and (max-width: 414px) {
-    min-height: 275vh;
+    min-height: 320vh;
+    padding-bottom: 50em;
   }
 }
 
