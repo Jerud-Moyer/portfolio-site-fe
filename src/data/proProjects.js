@@ -12,6 +12,6 @@ export const proProjects = [
     imgUrl: '/assets/MAAScreenShot.png',
     siteLink: 'https://www.michaelalbano.art/',
     gitLink: 'https://github.com/Michael-Albano-Artist',
-    description: 'An artist\'s gallery web app with a React/TypeScript/Redux front-end and a NodeJS back-end that utilizes the Cloudinary API. The site owner can upload their own high quality images and manage all content with an admin UI through a protected route.'
+    description: 'An artist\'s gallery web app with a React/TypeScript/Redux front-end and a NodeJS back-end that utilizes the Cloudinary API. The site owner can upload their own high quality images and manage all content with an admin UI through a protected route. With a mobile-first design, this app looks great on all devices.'
   }
 ];

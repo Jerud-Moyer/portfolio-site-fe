@@ -80,7 +80,7 @@
 .services {
   position: absolute;
   top: 9em;
-  left: 10em;
+  left: 14em;
   padding-top: 2.5em;
   background: var(--Ebony);
   width: 25em;
@@ -88,7 +88,7 @@
   border-radius: 40px;
   border: dotted var(--Opal) 4px;
   box-shadow: inset var(--Ebony-Dark) 2px 2px 2px 2px;
-  animation: fazeIn 2.75s ease;
+  animation: fazeIn 1.75s ease;
 
   @media screen and (max-width: 414px) {
     top: 6em;

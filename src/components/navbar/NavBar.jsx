@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import styles from './NavBar.css';
 
 const NavBar = () => {
@@ -12,6 +13,7 @@ const NavBar = () => {
         <a href={'#freelance'}>freelance</a>
         <a href={'#tech'}>tech stack</a>
         <a href={'#about'}>about me</a>
+        <Link to={'/moreProjects'}>more projects</Link>
       </nav>
       <div className={styles.mobileNav} >
         {showMobile ?
@@ -30,6 +32,7 @@ const NavBar = () => {
               <a href={'#freelance'}>freelance</a>
               <a href={'#tech'}>tech stack</a>
               <a href={'#about'}>about me</a>
+              <Link to={'/moreProjects'}>more projects</Link>
             </nav>
           </nav>
           : <nav 

@@ -49,7 +49,16 @@ export const moreProjects = [
     downloadLink: '',
     description: 'An API for characters of Star Trek T.O.S. Built with NodeJS, Express, and Pug.',
     mobile: false
-  }
+  },
+  {
+    name: 'Restman',
+    imgUrl: '/assets/restman.png',
+    siteLink: 'https://hopeful-davinci-86e58e.netlify.app/',
+    gitLink: 'https://github.com/Jerud-Moyer/RESTMAN',
+    downloadLink: '',
+    description: 'A handy browser-based Postman clone.',
+    mobile: false
+  },
 ];
 
 export const mobileProjects = [
