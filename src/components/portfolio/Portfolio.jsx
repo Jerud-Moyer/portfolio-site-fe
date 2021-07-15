@@ -12,7 +12,7 @@ import styles from './Portfolio.css';
 const Portfolio = () => {
   return (
     <div className={styles.portfolio} >
-      <nav><NavBar /></nav>
+      <nav data-testid={'nav-bar'} ><NavBar /></nav>
       <SectionZero />
       <SectionOne />
       <SectionTwo />
