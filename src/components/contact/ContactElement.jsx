@@ -43,7 +43,7 @@ const ContactElement = ({ page }) => {
             >{'my resume =>'}
             </p>
         }
-        <a href={'/assets/jerudresume.pdf'}>
+        <a href={'/assets/jerud-moyer-resume.pdf'}>
           <img className={styles.mediaPic} src={resume} alt={'PDF'}/>
         </a>
       </div>
