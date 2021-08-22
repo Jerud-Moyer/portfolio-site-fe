@@ -1,11 +1,11 @@
 export const tech = [
   {
     name: 'languages',
-    items: ['JavaScript', 'TypeScript', 'CSS', 'HTML']
+    items: ['JavaScript', 'TypeScript', 'Dart', 'CSS', 'HTML']
   },
   {
     name: 'frameworks \n& libraries',
-    items: ['React', 'Redux', 'React-Native', 'NodeJS', 'Express']
+    items: ['React', 'Redux', 'React-Native', 'Flutter', 'NodeJS/Express']
   },
   {
     name: 'DB & \ndev⎯tools',

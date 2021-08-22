@@ -72,7 +72,7 @@
 
 .animatedTechTypeyes {
   
-  animation: slide ease infinite 5s;
+  animation: slide ease infinite 6s;
 
   @media screen and (max-width: 781px) {
     animation: tabletSlide ease infinite 5s;

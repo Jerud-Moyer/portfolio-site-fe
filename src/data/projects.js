@@ -70,5 +70,14 @@ export const mobileProjects = [
     gitLink: 'https://github.com/Meme-Nerds',
     description: 'A random meme generator.',
     mobile: true
+  },
+  {
+    name: 'Trek\nCharacter\nPicker',
+    imgUrl: '/assets/trek-picker.png',
+    siteLink: 'https://trek-character-picker.web.app/#/',
+    downloadLink: '/assets',
+    gitLink: 'https://github.com/Jerud-Moyer/trek-character-picker',
+    description: 'A quiz based character picker built with Dart and Flutter.',
+    mobile: true
   }
 ];

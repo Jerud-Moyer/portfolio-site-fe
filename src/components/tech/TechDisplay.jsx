@@ -15,7 +15,7 @@ const TechDisplay = () => {
   });
 
   const delay = inView && (index <= 3)
-    ? 5000
+    ? 6000
     : null;
  
   useInterval(() => {
