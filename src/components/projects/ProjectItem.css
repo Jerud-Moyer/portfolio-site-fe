@@ -35,7 +35,11 @@
 }
 
 .name {
+  display: flex;
   font-family: 'Inconsolata';
+  width: 70%;
+  height: 3em;
+  align-items: flex-end;
 }
 
 .projectItem > * {
@@ -61,6 +65,7 @@
 
 .mobileProjectPic {
   max-width: 10em;
+  max-height: 20em;
   animation: jump ease .75s;
 }
 

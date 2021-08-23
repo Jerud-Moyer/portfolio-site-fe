@@ -14,7 +14,7 @@ const TechOverview = () => {
         <p>〔</p>
         <div>Front-End,</div>
         <div>Back-End,</div>
-        <div>Responsive-Design</div>
+        <div>Mobile</div>
         <p>〕</p>
       </>
       
