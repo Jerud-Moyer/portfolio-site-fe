@@ -23,6 +23,7 @@
   padding: 1em 1em 0 1em;
   height: 100vh;
   animation: fadeIn ease 1s;
+  margin-top: 10vh;
 
   @media screen  and (max-width: 781px) {
     height: fit-content;
