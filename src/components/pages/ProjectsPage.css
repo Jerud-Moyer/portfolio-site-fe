@@ -18,11 +18,11 @@
 }
 
 .projectsPage {
-  min-height: 100vh;
+  min-height: 200vh;
   width: 100vw;
   background-color: var(--Opal);
   margin-top: 80vh;
-  padding-bottom: 18em;
+  padding-bottom: 10em;
 
   @media screen  and (max-width: 781px) {
     height: 180vh;
@@ -39,13 +39,13 @@
 }
 
 .listBox2 {
-  margin: 5em 0 0 0;
+  margin: 0 0 0 0;
 }
 
 .arrowBox {
   position: absolute;
   right: 13%;
-  bottom: 10em;
+  bottom: 12em;
 
   @media screen and (max-width: 414px) {
     bottom: 1em;
