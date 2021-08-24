@@ -12,7 +12,7 @@ const ProjectItem = ({
   mobile,
   description 
 }) => {
-
+  console.log(name);
   const [ref, inView] = useInView({
     // triggerOnce: true,
     threshold: .6,
@@ -68,8 +68,11 @@ const ProjectItem = ({
           href={downloadLink}
           download
         >
-          {`Download ${name}
-          for Android`} 
+          {(name === 'Trek\nCharacter\nPicker') 
+            ? 'Download coming soon!'
+            : `Download ${name}
+          for Android`
+          } 
         </a>
       }
       <a
