@@ -21,6 +21,7 @@ const RecentWork = () => {
   
   
   const [ref, inView] = useInView({
+    triggerOnce: true,
     threshold: .3,
   });
 

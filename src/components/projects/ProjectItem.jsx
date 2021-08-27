@@ -12,9 +12,8 @@ const ProjectItem = ({
   mobile,
   description 
 }) => {
-  console.log(name);
   const [ref, inView] = useInView({
-    // triggerOnce: true,
+    triggerOnce: true,
     threshold: .6,
   });
 
