@@ -20,10 +20,10 @@
 .homePage {
   display: block;
   position: relative;
-  min-height: 110vh;
+  min-height: 100vh;
   width: 100vw;
   padding: .5em 2.75em 0em 0em;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
   
   background-color: var(--Ebony);
 
@@ -85,7 +85,7 @@
 
 .arrowBox {
   position: absolute;
-  bottom: 2em;
+  bottom: 0;
   left: 1em;
 }
 
