@@ -18,11 +18,11 @@
 }
 
 .projectsPage {
-  min-height: 180vh;
+  min-height: 150vh;
   width: 100vw;
   background-color: var(--Opal);
   margin-top: 80vh;
-  padding-bottom: 38vh;
+  padding-bottom: 0;
 
   @media screen  and (max-width: 781px) {
     height: 180vh;
@@ -45,7 +45,7 @@
 .arrowBox {
   position: absolute;
   right: 13%;
-  bottom: 12em;
+  bottom: 1em;
 
   @media screen and (max-width: 414px) {
     bottom: 1em;
