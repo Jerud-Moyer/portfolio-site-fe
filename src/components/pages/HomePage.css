@@ -76,7 +76,7 @@
 }
 
 .factBox {
-  margin-top: 6rem;
+  margin-top: 10rem;
 
   @media screen  and (max-width: 414px) {
     margin-top: -2em;
