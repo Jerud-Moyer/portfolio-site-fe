@@ -9,6 +9,7 @@ import PopUp from './PopUp';
 import { PropTypes } from 'prop-types';
 import { useInterval } from '../../hooks/hooks';
 
+
 const ContactElement = ({ page }) => {
   const [trigger, setTrigger] = useState(0);
   
