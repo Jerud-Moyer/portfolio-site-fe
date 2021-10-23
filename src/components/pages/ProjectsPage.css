@@ -44,7 +44,7 @@
 
 .arrowBox {
   position: absolute;
-  right: 13%;
+  right: 8em;
   bottom: 1em;
 
   @media screen and (max-width: 414px) {
