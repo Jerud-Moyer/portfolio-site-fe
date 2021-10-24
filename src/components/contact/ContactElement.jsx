@@ -88,9 +88,9 @@ const ContactElement = ({ page }) => {
         }
         <a href={'https://github.com/Jerud-Moyer'}>
           <img className={styles.mediaPic} src={github} alt={'GitHub'}/>
+    
         </a>
       </div>
-      
     </div>
   );
 };
