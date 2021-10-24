@@ -22,7 +22,7 @@
   width: 100vw;
   background-color: var(--Opal);
   margin-top: 80vh;
-  padding-bottom: 0;
+  padding-bottom: 5rem;
 
   @media screen  and (max-width: 781px) {
     height: 180vh;
