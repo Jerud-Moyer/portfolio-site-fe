@@ -18,7 +18,7 @@
 }
 
 .projectsPage {
-  min-height: 150vh;
+  min-height: 200vh;
   width: 100vw;
   background-color: var(--Opal);
   margin-top: 80vh;
