@@ -44,7 +44,10 @@ const ContactElement = ({ page }) => {
             >{'my resume =>'}
             </p>
         }
-        <a href={'/assets/jerud-moyer-resume.pdf'}>
+        <a
+          href={'/assets/jerud-moyer-resume.pdf'}
+          target={'blank'}
+        >
           <img className={styles.mediaPic} src={resume} alt={'PDF'}/>
         </a>
       </div>
@@ -58,7 +61,10 @@ const ContactElement = ({ page }) => {
             >{'Twitter =>'}
             </p>
         }
-        <a href={'https://twitter.com/Jerud7'}>
+        <a
+          href={'https://twitter.com/Jerud7'}
+          target={'blank'}
+        >
           <img className={styles.mediaPic} src={twitter} alt={'Twitter'}/>
         </a>
       </div>
@@ -72,7 +78,10 @@ const ContactElement = ({ page }) => {
             >{'LinkedIn =>'}
             </p>
         }
-        <a href={'https://www.linkedin.com/in/jerud-moyer/'}>
+        <a
+          href={'https://www.linkedin.com/in/jerud-moyer/'}
+          target={'blank'}
+        >
           <img className={styles.mediaPic} src={linkedIn} alt={'LinkedIn'}/>
         </a>
       </div>
@@ -86,7 +95,10 @@ const ContactElement = ({ page }) => {
             >{'Github =>'}
             </p>
         }
-        <a href={'https://github.com/Jerud-Moyer'}>
+        <a
+          href={'https://github.com/Jerud-Moyer'}
+          taget={'blank'}
+        >
           <img className={styles.mediaPic} src={github} alt={'GitHub'}/>
     
         </a>
