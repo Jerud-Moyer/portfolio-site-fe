@@ -97,7 +97,7 @@ const ContactElement = ({ page }) => {
         }
         <a
           href={'https://github.com/Jerud-Moyer'}
-          taget={'blank'}
+          target={'blank'}
         >
           <img className={styles.mediaPic} src={github} alt={'GitHub'}/>
     
