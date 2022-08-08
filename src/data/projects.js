@@ -44,7 +44,7 @@ export const moreProjects = [
   {
     name: 'Trek-dex-API',
     imgUrl: '/assets/Trek-Dex-Api.png',
-    siteLink: 'https://http://trek-dex.herokuapp.com/docs',
+    siteLink: 'https://trek-dex.herokuapp.com/docs',
     gitLink: 'https://github.com/Jerud-Moyer/Trek-Characters--be',
     downloadLink: '',
     description: 'An API for characters of Star Trek T.O.S. Built with NodeJS, Express, and Pug.',
