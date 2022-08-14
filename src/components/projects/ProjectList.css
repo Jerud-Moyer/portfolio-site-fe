@@ -30,7 +30,7 @@
   }
 
   @media screen and (max-width: 414px) {
-    
+
   }
 }
 
@@ -40,6 +40,7 @@
   flex-direction: row;
   justify-content: center;
   width: 100vw;
+  padding: 0 20%;
 
   @media screen  and (max-width: 781px) {
     flex-direction: column;
@@ -52,20 +53,28 @@
   
 }
 
+.projectListItem {
+  width: 30%;
+
+  @media screen and (max-width: 781px) {
+    width: 80%;
+  }
+}
+
 .arrowBox {
   position: absolute;
   top: 50em;
   right: 8em;
   margin-bottom: 2em;
 
-  @media screen and (max-width: 414px) {
-    bottom: -71em;
-    left: 20em;
-  }
-
   @media screen and (max-width: 781px) {
-   right: 1em;
+    right: 4em;
     bottom: -84em;
+  }
+  
+  @media screen and (max-width: 414px) {
+    bottom: -5em;
+    right: 4em;
   }
 }
 

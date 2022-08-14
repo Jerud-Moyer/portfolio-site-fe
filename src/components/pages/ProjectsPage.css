@@ -29,17 +29,25 @@
   }
 
   @media screen and (max-width: 414px) {
-    min-height: 320vh;
+    min-height: 420vh;
     padding-bottom: 50em;
   }
 }
 
 .listBox1 {
   margin: -5em 0 -12em 0;
+
+  @media screen and (max-width: 414px) {
+    margin: -5em 0 5em 0;
+  }
 }
 
 .listBox2 {
   margin: 0 0 0 0;
+
+  @media screen and (max-width: 414px) {
+    margin: 150px 0 0 0;
+  }
 }
 
 .arrowBox {
@@ -48,6 +56,7 @@
   bottom: 1em;
 
   @media screen and (max-width: 414px) {
+    right: 4em;
     bottom: 1em;
   }
 }

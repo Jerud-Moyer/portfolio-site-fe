@@ -13,7 +13,7 @@ const ProjectList = ({ projects, forHomePage, mobile }) => {
   });
 
   const projectElements = projects.map(project => (
-    <li key={project.name}>
+    <li key={project.name} className={styles.projectListItem}>
       <ProjectItem {...project} />
     </li>
   ));

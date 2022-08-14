@@ -5,7 +5,7 @@ export const tech = [
   },
   {
     name: 'frameworks \n& libraries',
-    items: ['React', 'Redux', 'React-Native', 'Flutter', 'NodeJS/Express']
+    items: ['React/Redux', 'Vue', 'React-Native', 'Flutter', 'NodeJS/Express']
   },
   {
     name: 'DB & \ndev⎯tools',
