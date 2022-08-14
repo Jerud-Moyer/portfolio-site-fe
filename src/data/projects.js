@@ -2,7 +2,7 @@
 export const projects = [
   {
     name: 'Mood-Music',
-    imgUrl: '/assets/moodmusic.png',
+    imgUrl: '/assets/mood-music-small.png',
     siteLink: 'https://mood-music.netlify.app/',
     gitLink: 'https://github.com/Silver-Surfers',
     downloadLink: '',
@@ -11,7 +11,7 @@ export const projects = [
   },
   {
     name: 'Project Vobot',
-    imgUrl: '/assets/vobot.png',
+    imgUrl: '/assets/vobot-small.png',
     siteLink: 'https://twitter.com/allthebestword1',
     gitLink: 'https://github.com/VTMFOA',
     downloadLink: '',
@@ -20,7 +20,7 @@ export const projects = [
   },
   {
     name: 'What\'s Cook\'n',
-    imgUrl: '/assets/whatscookn.png',
+    imgUrl: '/assets/whats-cookin-small.png',
     siteLink: 'https://whats-cookn.netlify.app/',
     gitLink: 'https://github.com/Aluminum-Chefs',
     downloadLink: '',
@@ -78,6 +78,15 @@ export const mobileProjects = [
     downloadLink: '/assets',
     gitLink: 'https://github.com/Jerud-Moyer/trek-character-picker',
     description: 'A quiz based character picker built with Dart and Flutter.',
+    mobile: true
+  },
+  {
+    name: 'ConverTron 5000',
+    imgUrl: '/assets/converTron.png',
+    siteLink: '',
+    downloadLink: '/assets',
+    gitLink: 'https://github.com/The-Converters/convert',
+    description: 'A handy weights and measures converter built in React Native with Typescript.',
     mobile: true
   }
 ];

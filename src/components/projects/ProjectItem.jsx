@@ -13,17 +13,16 @@ const ProjectItem = ({
   description 
 }) => {
   const [ref, inView] = useInView({
-    triggerOnce: true,
+    // triggerOnce: true,
     threshold: .6,
   });
 
   return (
     <div
-      className={inView
-        ? styles.projectItem
-        : styles.invisible
+      className={
+        `${inView ? styles.projectItem : styles.invisible}
+        ${mobile ? styles.mobile : ''}`
       }
-      
     >
       
       <h2 className={styles.name}>{name}</h2>
@@ -67,7 +66,7 @@ const ProjectItem = ({
           href={downloadLink}
           download
         >
-          {(name === 'Trek\nCharacter\nPicker') 
+          {(name === 'Trek\nCharacter\nPicker' || name === 'ConverTron 5000') 
             ? 'Download coming soon!'
             : `Download ${name}
           for Android`
