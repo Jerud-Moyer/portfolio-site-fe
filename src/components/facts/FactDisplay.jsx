@@ -10,17 +10,38 @@ const FactDisplay = () => {
   const dispatch = useDispatch();
   const facts = useSelector(state => state.facts);
   const [randomFact, setRandomFact] = useState({});
-  
-  useInterval(() => {
-    const randomIndexNum = Math.floor(Math.random() * facts.length);
-    setRandomFact(facts[randomIndexNum]);
-  }, 5000);
-  
-  
+  const [factIndexes, setFactIndexes] = useState([]);
+
+  const resetFacts = () => {
+    let factsNum = facts.length - 1;
+    const indexesArr = [];
+    
+    while(factsNum >= 0) {
+      indexesArr.push(factsNum);
+      factsNum -= 1;
+    }
+    setFactIndexes(indexesArr);
+  };
+
   useEffect(() => {
-    dispatch(fetchFacts());
+    dispatch(fetchFacts()); 
   }, []);
   
+  useEffect(() => {
+    resetFacts();
+  }, [facts]);
+  
+  useInterval(() => {
+    if(factIndexes.length) {
+      const randomIndexNum = Math.floor(Math.random() * factIndexes.length);
+      const factIndex = factIndexes[randomIndexNum];
+      setRandomFact(facts[factIndex]);
+      setFactIndexes(factIndexes.filter(i => i !== factIndex));
+    }
+    if(factIndexes.length == 1) {
+      resetFacts();
+    }
+  }, 5000);
   
   return (
     <div className={styles.fact}>
