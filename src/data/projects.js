@@ -53,7 +53,7 @@ export const moreProjects = [
   {
     name: 'Restman',
     imgUrl: '/assets/restman.png',
-    siteLink: 'https://hopeful-davinci-86e58e.netlify.app/',
+    siteLink: 'https://restman.netlify.app/',
     gitLink: 'https://github.com/Jerud-Moyer/RESTMAN',
     downloadLink: '',
     description: 'A handy browser-based Postman clone.',
