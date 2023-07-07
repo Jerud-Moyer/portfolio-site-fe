@@ -10,6 +10,7 @@ const RecentWork = () => {
   const [trigger, setTrigger] = useState(0);
   const amphead = proProjects[0];
   const albano = proProjects[1];
+  const eskart = proProjects[2];
   
   
   useInterval(() => {
@@ -90,6 +91,20 @@ const RecentWork = () => {
             className={styles.subHeadline2}
           >{albano.name}
           </h1>
+        </div>
+        <div className={styles.workBox3}>
+          <h1
+            className={styles.subHeadline}
+          >{eskart.name}
+          </h1>
+          <div   className={styles.picBox}>
+            <img
+              className={inView ? styles.workPic : styles.hidden}
+              src={eskart.imgUrl}/>
+            <p className={styles.workDescription}>{eskart.description}</p>
+            <a href={eskart.siteLink}>visit the site</a>
+            <a href={eskart.gitLink}>git repo</a>
+          </div>
         </div>
         <div className={styles.arrowBox}>
           <ScrollArrow />
