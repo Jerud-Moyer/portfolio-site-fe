@@ -1,6 +1,38 @@
 /* eslint-disable max-len */
 export const projects = [
   {
+    name: 'Nura ai',
+    imgUrl: '/assets/nura.png',
+    siteLink: 'https://nuraai.net',
+    gitLink: 'https://github.com/Jerud-Moyer/nura-ai',
+    downloadLink: '',
+    description: 'An AI genie built with OpenAI, NextJS and TypeScript. Using a custom fine tuned Davinci model from OpenAI as well as the DALL-E prompt to image model, Nura has the power to grant your wishes!',
+    mobile: false
+  },
+  {
+    name: 'Nerdmeme Web',
+    imgUrl: '/assets/nerdmeme-web.png',
+    siteLink: 'https://nerdmeme.fun',
+    gitLink: 'https://github.com/Jerud-Moyer/nerdmeme-web',
+    downloadLink: '',
+    description: 'Using the same API as my Nerdmeme mobile app, this was built with NextJS, Tailwind, Material UI and TypeScript. The fun never ends at nerdmeme.fun!',
+    mobile: false
+  },
+  {
+    name: 'What\'s Cook\'n',
+    imgUrl: '/assets/whats-cookin-small.png',
+    siteLink: 'https://whats-cookn.netlify.app/',
+    gitLink: 'https://github.com/Aluminum-Chefs',
+    downloadLink: '',
+    description: 'A meal planner complete with recipe finder.',
+    mobile: false
+  }
+  
+
+];
+
+export const moreProjects = [
+  {
     name: 'Mood-Music',
     imgUrl: '/assets/mood-music-small.png',
     siteLink: 'https://mood-music.netlify.app/',
@@ -18,20 +50,6 @@ export const projects = [
     description: 'Tweet or text the name of your state and recieve voter information in return.',
     mobile: false
   },
-  {
-    name: 'What\'s Cook\'n',
-    imgUrl: '/assets/whats-cookin-small.png',
-    siteLink: 'https://whats-cookn.netlify.app/',
-    gitLink: 'https://github.com/Aluminum-Chefs',
-    downloadLink: '',
-    description: 'A meal planner complete with recipe finder.',
-    mobile: false
-  }
-  
-
-];
-
-export const moreProjects = [
   {
     name: 'TrekDex',
     imgUrl: '/assets/trekdex.png',

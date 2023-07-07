@@ -118,7 +118,8 @@
 }
 
 
-.workBox {
+.workBox,
+.workBox3 {
   position: relative;
   display: flex;
   flex-direction: row;
@@ -160,6 +161,10 @@
     margin: 8em 0 5em 0;
     padding: 0 0 5em 0;
   }
+}
+
+.workBox3 {
+  margin: -10em 12em 0 5em;
 }
 
 .picBox {
