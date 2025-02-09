@@ -9,7 +9,7 @@ const ContactForm = ({ formId }) => {
   const [message, setMessage] = useState('');
   const [messageSent, setMessageSent] = useState(false);
   const flag = 'This message was sent via jerud-moyer.dev';
-  const receiver = process.env.EMAIL_RECEIVER
+  const receiver = process.env.EMAIL_RECEIVER;
   const clientName = 'jerud-moyer.dev';
 
   const handleSubmit = e => {
