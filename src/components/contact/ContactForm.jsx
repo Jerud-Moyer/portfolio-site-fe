@@ -9,13 +9,15 @@ const ContactForm = ({ formId }) => {
   const [message, setMessage] = useState('');
   const [messageSent, setMessageSent] = useState(false);
   const flag = 'This message was sent via jerud-moyer.dev';
-  const email = process.env.EMAIL_API;
+  const receiver = process.env.EMAIL_RECEIVER;
+  const clientName = 'jerud-moyer.dev';
 
   const handleSubmit = e => {
     e.preventDefault();
     sendMessage({
       name,
-      email,
+      receiver,
+      clientName,
       senderEmail,
       message,
       flag
