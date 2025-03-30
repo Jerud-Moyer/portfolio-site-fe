@@ -52,7 +52,7 @@ const ContactElement = ({ page }) => {
         </a>
       </div>
 
-      <div className={styles.elementBox}>
+      {/* <div className={styles.elementBox}>
         {page === 'home-page' &&
             <p 
               className={trigger === 4 
@@ -67,12 +67,12 @@ const ContactElement = ({ page }) => {
         >
           <img className={styles.mediaPic} src={twitter} alt={'Twitter'}/>
         </a>
-      </div>
+      </div> */}
 
       <div className={styles.elementBox}>
         {page === 'home-page' &&
             <p 
-              className={trigger === 5
+              className={trigger === 4
                 ? styles.elementTag
                 : styles.invisible} 
             >{'LinkedIn =>'}
@@ -89,7 +89,7 @@ const ContactElement = ({ page }) => {
       <div className={styles.elementBox}>
         {page === 'home-page' &&
             <p 
-              className={trigger === 6
+              className={trigger === 5
                 ? styles.elementTag
                 : styles.invisible} 
             >{'Github =>'}
