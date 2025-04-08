@@ -2,21 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --AeroBlue: #D6F9DD;
-  --LightGreen: #99F7AB;
-  --YellowGreenCrayola: #ABDF75;
-  --Ebony: #60695C;
-  --Ebony-Dark: #373b34;
-  --SilverSand: #C5D6D8;
-  --OrchidCrayola: #FFB2E6;
-  --TerraCotta: #ED6A5A;
-  --PaleSpringBud: #F4F1BB;
-  --Opal: #9BC1BC;
-  --CadetBlue: #5CA4A9;
-  --Alabaster: #E6EBE0;
-}
-
 .invisible {
   visibility: hidden;
 }
@@ -73,6 +58,7 @@
 }
 
 .projectPic {
+  flex: 1;
   width: 12em;
 }
 
@@ -81,6 +67,7 @@
   border: solid black 1px;
   border-radius: 5px;
   box-shadow: var(--Ebony) 3px 3px 5px;
+  animation-delay: .2s;
   animation: jump ease .75s;
 
   @media screen  and (max-width: 781px) {
@@ -112,8 +99,8 @@
 
 @keyframes jump {
   0% {transform: translate(0, 0%) scale(0);}
-  25% {transform: translate(0, -20%);}
+  25% {transform: translate(0, -10%);}
   50% {transform: translate(0, 0%)  scale(1);}
-  75% {transform: translate(0, -10%);}
+  75% {transform: translate(0, -5%);}
   100% {transform: translate(0, 0%);}
 }

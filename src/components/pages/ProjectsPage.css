@@ -2,21 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --AeroBlue: #D6F9DD;
-  --LightGreen: #99F7AB;
-  --YellowGreenCrayola: #ABDF75;
-  --Ebony: #60695C;
-  --Ebony-Dark: #373b34;
-  --SilverSand: #C5D6D8;
-  --OrchidCrayola: #FFB2E6;
-  --TerraCotta: #ED6A5A;
-  --PaleSpringBud: #F4F1BB;
-  --Opal: #9BC1BC;
-  --CadetBlue: #5CA4A9;
-  --Alabaster: #E6EBE0;
-}
-
 .projectsPage {
   min-height: 200vh;
   width: 100vw;
@@ -35,7 +20,7 @@
 }
 
 .listBox1 {
-  margin: -5em 0 -12em 0;
+  /* margin: -5em 0 -12em 0; */
 
   @media screen and (max-width: 414px) {
     margin: -5em 0 5em 0;
