@@ -19,9 +19,9 @@ const HomePage = () => {
         </div>
         <ContactElement page={'home-page'}/>
       </div>
-      <div className={styles.factBox}>
+      {/* <div className={styles.factBox}>
         <FactDisplay />
-      </div>
+      </div> */}
       <div className={styles.arrowBox} >
         <ScrollArrow/>
       </div>    

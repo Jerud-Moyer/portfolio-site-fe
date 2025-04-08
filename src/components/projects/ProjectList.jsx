@@ -19,8 +19,10 @@ const ProjectList = ({ projects, forHomePage, mobile }) => {
   ));
 
   return (
+    <>
     <div
-      className={inView ? styles.projectBox : null}
+      className={styles.projectBox}
+      // className={inView ? styles.projectBox : styles.empty}
       ref={ref}
       style={{
         transition: 'ease-in',
@@ -59,6 +61,7 @@ const ProjectList = ({ projects, forHomePage, mobile }) => {
       
       
     </div>
+    </>
   );
 };
 
