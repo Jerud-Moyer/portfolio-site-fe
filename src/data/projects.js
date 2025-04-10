@@ -6,7 +6,7 @@ export const projects = [
     siteLink: 'https://nuraai.net',
     gitLink: 'https://github.com/Jerud-Moyer/nura-ai',
     downloadLink: '',
-    description: 'An AI genie built with OpenAI, NextJS and TypeScript. Using a custom fine tuned Davinci model from OpenAI as well as the DALL-E prompt to image model, Nura has the power to grant your wishes!',
+    description: 'An AI genie built with OpenAI, NextJS and TypeScript. Nura has the power to grant your wishes!',
     mobile: false
   },
   {
@@ -19,16 +19,24 @@ export const projects = [
     mobile: false
   },
   {
-    name: 'What\'s Cook\'n',
-    imgUrl: '/assets/whats-cookin-small.png',
-    siteLink: 'https://whats-cookn.netlify.app/',
-    gitLink: 'https://github.com/Aluminum-Chefs',
+    name: 'Dolor Meus',
+    imgUrl: '/assets/dolor-meus.png',
+    siteLink: 'https://dolor-meus-74f8f9153f9e.herokuapp.com/',
+    gitLink: 'https://github.com/Jerud-Moyer/dolor-meus',
     downloadLink: '',
-    description: 'A meal planner complete with recipe finder.',
+    description: 'A Lorem Ipsum generator with a twist. Flask and Openai.',
     mobile: false
   }
+  // {
+  //   name: 'What\'s Cook\'n',
+  //   imgUrl: '/assets/whats-cookin-small.png',
+  //   siteLink: 'https://whats-cookn.netlify.app/',
+  //   gitLink: 'https://github.com/Aluminum-Chefs',
+  //   downloadLink: '',
+  //   description: 'A meal planner complete with recipe finder.',
+  //   mobile: false
+  // }
   
-
 ];
 
 export const moreProjects = [
