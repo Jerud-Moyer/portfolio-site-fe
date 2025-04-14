@@ -20,7 +20,9 @@ const RecentWork = () => {
   }, 1500);
    
   
-  
+  const [ref, inView] = useInView({
+    threshold: .3
+  })
   const [refA, inViewA] = useInView({
     // triggerOnce: true,
     threshold: .3,
@@ -37,9 +39,9 @@ const RecentWork = () => {
   return (
     
     <div
-      
+      ref={ref}
       className={styles.bigBox}>
-      {
+      {inView &&
       <>
         <h1
           className={styles.proHeadline} 

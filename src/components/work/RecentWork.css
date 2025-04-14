@@ -29,11 +29,12 @@
  flex-direction: column;
  align-items: center;
  margin: 0 0 0 0;
- padding-bottom: 1em;
+ padding-bottom: 100px;
  min-height: 80rem;
  width: 100%;
  overflow: hidden;
- background: linear-gradient(45deg, hsla(203, 94%, 39%, 1) 0%, hsla(201, 54%, 69%, 1) 0.3333333333333333%, hsla(184, 31%, 51%, 1) 0.6666666666666666%);
+ background: rgb(91, 164, 169);
+ /* background: linear-gradient(45deg, hsla(203, 94%, 39%, 1) 0%, hsla(201, 54%, 69%, 1) 50%, hsla(184, 31%, 51%, 1) 100%); */
  background-size: contain;
 
   @media screen and (max-width: 414px) {
@@ -168,10 +169,6 @@
     margin: 8em 0 5em 0;
     padding: 0 0 5em 0;
   }
-}
-
-.workBox3 {
-  /* margin: -10em 0 0 5em; */
 }
 
 .picBox {
