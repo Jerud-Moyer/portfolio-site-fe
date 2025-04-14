@@ -4,13 +4,14 @@
 
 .projectsPage {
   min-height: 200vh;
-  width: 100vw;
+  width: 100%;
   background-color: var(--Opal);
   margin-top: 80vh;
   padding-bottom: 5rem;
 
-  @media screen  and (max-width: 781px) {
-    height: 180vh;
+  @media screen  and (max-width: 768px) {
+    /* height: 180vh; */
+  
   }
 
   @media screen and (max-width: 414px) {
@@ -30,9 +31,13 @@
 .listBox2 {
   margin: 0 0 0 0;
 
-  @media screen and (max-width: 414px) {
-    margin: 150px 0 0 0;
+
+  @media  screen and (max-width: 768px) {
+    display: none;
   }
+  /* @media screen and (max-width: 414px) {
+    margin: 150px 0 0 0;
+  } */
 }
 
 .arrowBox {

@@ -2,21 +2,6 @@
   box-sizing: border-box;
 }
 
-:root {
-  --AeroBlue: #D6F9DD;
-  --LightGreen: #99F7AB;
-  --YellowGreenCrayola: #ABDF75;
-  --Ebony: #60695C;
-  --Ebony-Dark: #373b34;
-  --SilverSand: #C5D6D8;
-  --OrchidCrayola: #FFB2E6;
-  --TerraCotta: #ED6A5A;
-  --PaleSpringBud: #F4F1BB;
-  --Opal: #9BC1BC;
-  --CadetBlue: #5CA4A9;
-  --Alabaster: #E6EBE0;
-}
-
 .proHeadline {
   margin: 2em 0 2em 6em;
   font-family: 'Inconsolata';
@@ -24,8 +9,8 @@
   text-shadow: var(--Alabaster) 1px 1px 1px;
   animation: fadeIn ease 2s;
 
-  @media screen  and (max-width: 781px) {
-    margin: 2em 0 0 4em;
+  @media screen  and (max-width: 765px) {
+    margin: 2em 0 0 0;
   }
 
   @media screen and (max-width: 414px) {
@@ -40,10 +25,13 @@
 
 .bigBox {
  position: relative;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
  margin: 0 0 0 0;
  padding-bottom: 1em;
  min-height: 80rem;
- width: 100vw;
+ width: 100%;
  overflow: hidden;
  background: linear-gradient(45deg, hsla(203, 94%, 39%, 1) 0%, hsla(201, 54%, 69%, 1) 0.3333333333333333%, hsla(184, 31%, 51%, 1) 0.6666666666666666%);
  background-size: contain;
@@ -55,18 +43,22 @@
 }
 
 .subHeadline {
-  margin: 6em 0 0 10em;
+  margin-top: 4em;
   font-family: 'Inconsolata';
   color: var(--Ebony-Dark);
   animation: fadeIn ease 5s;
   
+  @media screen and (max-width: 768px) {
+    
+  }
+
   @media screen and (max-width: 414px) {
     margin: 2em 0 0 -2em;
   }
 }
 
 .subHeadline2 {
-  margin: 6em 0 0 4em;
+  margin-top: 4em;
   font-family: 'Inconsolata';
   color: var(--Ebony-Dark);
   animation: fadeIn ease 5s;
@@ -88,6 +80,10 @@
   border: dotted var(--Opal) 4px;
   box-shadow: inset var(--Ebony-Dark) 2px 2px 2px 2px;
   animation: fazeIn 1.75s ease;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 
   @media screen and (max-width: 414px) {
     top: 6em;
@@ -117,44 +113,55 @@
 
 }
 
-
 .workBox,
 .workBox3 {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin: 7em 12em 0 5em;
-  padding: 5vh 5vw 5vh 5vw;
-  animation: fadeIn ease 5s;
+  justify-content: flex-end;
+  margin: 200px 0 0 7em;
+  padding-left: 150px;
+  animation: fadeIn 1.75s ease;
+  gap: 100px;
 
-  @media screen  and (max-width: 781px) {
+  @media screen  and (max-width: 768px) {
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
+    gap: 30px;
   }
 
   @media screen and (max-width: 414px) {
     margin: 8em 0 5em 0;
     padding: 0 0 5em 0;
   }
+}
+
+.workBox3 {
+  margin: 25px 0 0 7em;
 }
 
 .workBox2 {
   position: relative;
   display: flex;
   flex-direction: row;
-  margin: -10em 0 0 0;
-  padding: 5vh 5vw 5vh 5vw;
-  animation: fadeIn ease 5s;
+  justify-content: flex-start;
+  margin: 25px 7em 0 0;
+  padding-right: 150px;
+  animation: fadeIn 1.75s ease;
 
-  @media screen  and (max-width: 781px) {
-    flex-direction: column;
+  max-width: 1200px;
+  gap: 100px;
+
+  @media screen  and (max-width: 768px) {
+    flex-direction: column-reverse;
     align-items: center;
     justify-content: center;
     margin: 0;
     padding: 0;
+    gap: 30px;
   }
 
   @media screen and (max-width: 414px) {
@@ -164,7 +171,7 @@
 }
 
 .workBox3 {
-  margin: -10em 12em 0 5em;
+  /* margin: -10em 0 0 5em; */
 }
 
 .picBox {
@@ -172,8 +179,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding-left: 6.25em;
-  margin: 6em 1em 0 2em;
+  margin: 6em 0 0 2em;
 
   @media screen  and (max-width: 781px) {
     margin: 0 0 0 -1.25em;
@@ -200,8 +206,9 @@
 
 .workDescription {
   font-family: 'Montserrat';
-  width: 30vw;
+  width: 560px;
   color: var(--Ebony-Dark);
+  margin-top: 24px;
 
   @media screen  and (max-width: 781px) {
     width: 55vw;
@@ -218,7 +225,6 @@
   border: solid var(--Alabaster) 1px;
   border-radius: 10px;
   box-shadow: var(--Ebony) 8px 7px 10px;
-  margin:0 .5em 1.25em 0;
   animation: shrink ease 1.75s;
 
   @media screen  and (max-width: 781px) {
