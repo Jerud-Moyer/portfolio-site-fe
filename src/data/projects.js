@@ -21,7 +21,7 @@ export const projects = [
   {
     name: 'Dolor Meus',
     imgUrl: '/assets/dolor-meus.png',
-    siteLink: 'https://dolor-meus-74f8f9153f9e.herokuapp.com/',
+    siteLink: 'https://dolor-me.us/',
     gitLink: 'https://github.com/Jerud-Moyer/dolor-meus',
     downloadLink: '',
     description: 'A Lorem Ipsum generator with a twist. Flask and Openai.',

@@ -21,7 +21,15 @@ const RecentWork = () => {
    
   
   
-  const [ref, inView] = useInView({
+  const [refA, inViewA] = useInView({
+    // triggerOnce: true,
+    threshold: .3,
+  });
+  const [refB, inViewB] = useInView({
+    // triggerOnce: true,
+    threshold: .3,
+  });
+  const [refC, inViewC] = useInView({
     // triggerOnce: true,
     threshold: .3,
   });
@@ -29,9 +37,9 @@ const RecentWork = () => {
   return (
     
     <div
-      ref={ref}
+      
       className={styles.bigBox}>
-      {inView &&
+      {
       <>
         <h1
           className={styles.proHeadline} 
@@ -64,24 +72,30 @@ const RecentWork = () => {
           >. . . I can help.
           </h3>
         </div>
-        <div className={styles.workBox}>
+        <div 
+          ref={refA} 
+          className={inViewA ? styles.workBox : styles.hidden}
+        >
           <h1
             className={styles.subHeadline}
           >{amphead.name}
           </h1>
           <div   className={styles.picBox}>
             <img
-              className={inView ? styles.workPic : styles.hidden}
+              className={inViewA ? styles.workPic : styles.hidden}
               src={amphead.imgUrl}/>
             <p className={styles.workDescription}>{amphead.description}</p>
             <a href={amphead.siteLink}>visit the site</a>
             <a href={amphead.gitLink}>git repo</a>
           </div>
         </div>
-        <div className={styles.workBox2}>
+        <div 
+          ref={refB} 
+          className={inViewB ? styles.workBox2 : styles.hidden}
+        >
           <div className={styles.picBox}>
             <img
-              className={inView ? styles.workPic : styles.hidden}
+              className={inViewB ? styles.workPic : styles.hidden}
               src={albano.imgUrl}/>
             <p className={styles.workDescription}>{albano.description}</p>
             <a href={albano.siteLink}>visit the site</a>
@@ -92,14 +106,17 @@ const RecentWork = () => {
           >{albano.name}
           </h1>
         </div>
-        <div className={styles.workBox3}>
+        <div 
+          ref={refC} 
+          className={inViewC ? styles.workBox3 : styles.hidden}
+        >
           <h1
             className={styles.subHeadline}
           >{eskart.name}
           </h1>
           <div   className={styles.picBox}>
             <img
-              className={inView ? styles.workPic : styles.hidden}
+              className={inViewC ? styles.workPic : styles.hidden}
               src={eskart.imgUrl}/>
             <p className={styles.workDescription}>{eskart.description}</p>
             <a href={eskart.siteLink}>visit the site</a>
